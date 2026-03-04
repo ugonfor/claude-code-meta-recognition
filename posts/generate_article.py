@@ -20,7 +20,11 @@ def img_to_base64(filepath):
 
 
 def load_scores():
-    with open(PROCESSED_DIR / "detailed_scores.json", 'r', encoding='utf-8') as f:
+    # Use v2 empirical scores if available
+    v2_path = PROCESSED_DIR / "detailed_scores_v2.json"
+    v1_path = PROCESSED_DIR / "detailed_scores.json"
+    path = v2_path if v2_path.exists() else v1_path
+    with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
@@ -364,7 +368,7 @@ def generate_html():
         <!-- Stats Banner -->
         <div class="stats-banner">
             <div class="stat-item">
-                <div class="stat-value green">79.1%</div>
+                <div class="stat-value green">{(total_correct/total_claims*100) if total_claims > 0 else 0:.1f}%</div>
                 <div class="stat-label">정확한 주장</div>
             </div>
             <div class="stat-item">
@@ -390,7 +394,7 @@ def generate_html():
                 <div class="highlight-box success">
                     <p>
                         <strong>Claude는 자신이 배포되는 Claude Code 인터페이스에 대해 상당히 정확한 지식을 보유하고 있다.</strong>
-                        26개 실험에서 364개의 구체적 주장을 분석한 결과, 79.1%가 정확했고 20.9%가 환각이었다.
+                        26개 실험에서 {total_claims}개의 구체적 주장을 분석한 결과, {(total_correct/total_claims*100) if total_claims > 0 else 0:.1f}%가 정확했고 {halluc_rate:.1f}%가 환각이었다.
                         특히 메타 인식 능력이 뛰어나 "시각적 인식이 없다"는 사실을 정확히 알고 있었다.
                     </p>
                 </div>
@@ -465,7 +469,8 @@ def generate_html():
                 </table>
 
                 <p>
-                    응답은 code.claude.com의 <strong>공식 문서</strong>를 기준 진실(ground truth)로 삼아
+                    응답은 <strong>경험적 기준 진실</strong>(시스템 프롬프트 분석, CLI 명령어 실행,
+                    실제 스크린샷 검증)을 바탕으로
                     정확도, 구체성, 완전성, 신뢰도 보정 4가지 차원에서 평가했다.
                 </p>
             </div>
@@ -488,34 +493,37 @@ def generate_html():
             <div class="section" style="border-top: none; padding-top: 0;">
                 <div class="finding-card">
                     <div class="finding-title">
-                        <span class="badge badge-green">정확도 3.6/5</span> &nbsp;
-                        강한 전반적 인터페이스 지식
+                        <span class="badge badge-green">정확도 {avg_accuracy:.1f}/5</span> &nbsp;
+                        {'강한' if avg_accuracy >= 3.5 else '보통 수준의'} 전반적 인터페이스 지식
                     </div>
                     <div class="finding-body">
                         Claude는 터미널 기반 레이아웃, 도구 승인 대화상자, 스트리밍 출력, 마크다운 렌더링 등
-                        핵심 요소를 정확히 서술했다. 모든 26개 응답이 "터미널 기반 CLI"임을 정확히 식별.
+                        핵심 요소를 정확히 서술했다. 그러나 프롬프트 문자(❯가 아닌 &gt;), 레이아웃 구조(2컬럼을 단일 컬럼으로),
+                        로고(작은 추상 아트를 큰 배너로) 등 세부 시각 요소에서 오류를 보였다.
                     </div>
                 </div>
 
                 <div class="finding-card">
                     <div class="finding-title">
-                        <span class="badge badge-blue">구체성 4.2/5</span> &nbsp;
-                        놀라울 정도로 상세한 묘사
+                        <span class="badge badge-blue">구체성 {avg_specificity:.1f}/5</span> &nbsp;
+                        상세하지만 때로 부정확한 묘사
                     </div>
                     <div class="finding-body">
                         ANSI 색상 코드, 유니코드 박스 드로잉 문자, 스피너 애니메이션, diff 색상 코딩 등
-                        세부적인 시각적 요소까지 묘사. ASCII 아트 실험에서는 구체성 5.0/5.0 달성.
+                        세부적인 시각적 요소까지 묘사했으나, 경험적 검증 결과 일부는
+                        실제와 다른 세부 사항이었다 (예: ASCII 배너 환각).
                     </div>
                 </div>
 
                 <div class="finding-card">
                     <div class="finding-title">
-                        <span class="badge badge-red">환각 20.9%</span> &nbsp;
-                        보통 수준의 환각
+                        <span class="badge badge-red">환각 {halluc_rate:.1f}%</span> &nbsp;
+                        {'상당한' if halluc_rate >= 30 else '보통 수준의'} 환각
                     </div>
                     <div class="finding-body">
-                        "CLAUDE CODE" ASCII 아트 배너(실제로 없음), 특정 색상 코드, 없는 UI 요소 등이
-                        환각으로 분류. 비교 실험(E5)은 10%로 가장 낮은 환각률, ASCII 아트(E4)는 29%로 가장 높음.
+                        "CLAUDE CODE" ASCII 아트 배너(실제로 없음), 프롬프트 문자 오류(&gt; vs ❯),
+                        단일 컬럼 레이아웃(실제 2컬럼) 등이 환각으로 분류.
+                        경험적 기준 진실 적용 후 환각률이 문서 기반 대비 상승하였다.
                     </div>
                 </div>
             </div>
@@ -769,7 +777,7 @@ def generate_html():
                 <h2>결론</h2>
                 <p>
                     <strong>Claude는 자신의 배포 인터페이스에 대해 상당한 수준의 지식을 보유하고 있다.</strong>
-                    정확도 3.58/5.0, 환각률 20.9%는 "꽤 잘 알지만 완벽하진 않다"를 의미한다.
+                    정확도 {avg_accuracy:.2f}/5.0, 환각률 {halluc_rate:.1f}%는 "어느 정도 알지만 세부 사항에서 상당한 오류가 있다"를 의미한다.
                 </p>
                 <p>
                     가장 인상적인 점은 Claude가 자신의 한계를 정확히 아는 것이다.
@@ -787,7 +795,7 @@ def generate_html():
         <div class="footer">
             <strong>Full Report:</strong> report/claude_code_meta_recognition_report.pdf (9 pages, Korean)<br>
             <strong>Code &amp; Data:</strong> <a href="https://github.com/ugonfor/claude-code-meta-recognition">github.com/ugonfor/claude-code-meta-recognition</a><br><br>
-            26 experiments &middot; 364 claims &middot; 7 categories &middot; 6 figures<br>
+            26 experiments &middot; {total_claims} claims &middot; 7 categories &middot; 6 figures<br>
             Research conducted by Claude Opus 4.6 under Director supervision
         </div>
     </div>
