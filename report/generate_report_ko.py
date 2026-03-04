@@ -653,6 +653,59 @@ def build_report(data):
         styles['BodyText']
     ))
 
+    # ==================== 5.6 실제 인터페이스와의 비교 ====================
+    elements.append(Paragraph("5.6 실제 인터페이스와의 비교", styles['SubsectionTitle']))
+    elements.append(Paragraph(
+        "연구 과정에서 실제 Claude Code 시작 화면의 스크린샷을 확보하여, Claude의 묘사와 실제 "
+        "인터페이스를 직접 비교할 수 있었다. 실제 인터페이스는 둥근 모서리 박스(╭╮╰╯) 안에 "
+        "2컬럼 레이아웃으로 구성되어 있으며, 왼쪽에 환영 메시지와 로고, 오른쪽에 팁과 최근 활동이 "
+        "표시된다. 하단에는 ❯ 프롬프트와 권한 모드 상태가 표시된다.",
+        styles['BodyText']
+    ))
+
+    # Comparison table
+    comparison_data = [
+        ["Claude의 묘사", "실제 인터페이스", "판정"],
+        ["터미널 기반 CLI", "터미널 기반 CLI", "정확"],
+        ["박스 드로잉 문자 (╭╮╰╯)", "╭╮╰╯ 실제 사용", "정확"],
+        ["모델 이름 표시", "Opus 4.6 (1M context)", "정확"],
+        ["작업 디렉토리 표시", "C:\\Users\\hyogon.ryu", "정확"],
+        ["하단 입력 영역", "하단 프롬프트 위치", "정확"],
+        ["Shift+Tab 권한 전환", "shift+tab to cycle 표시", "정확"],
+        ["버전 정보 표시", "Claude Code v2.1.66", "정확"],
+        ['거대 "CLAUDE CODE" 배너', "작은 추상 로고 (▐▛███▜▌)", "환각"],
+        ["단일 컬럼 레이아웃", "2컬럼 (좌: 환영, 우: 팁)", "오류"],
+        ['프롬프트 문자 ">"', "프롬프트 문자 ❯", "오류"],
+        ["비용/토큰 상태바", "권한 모드 상태 표시", "오류"],
+        ["(미언급)", '"Welcome back" 인사', "누락"],
+        ["(미언급)", "KRAFTON Inc. 조직 정보", "누락"],
+    ]
+    comp_table = Table(comparison_data, colWidths=[2*inch, 2*inch, 0.7*inch])
+    comp_table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), HexColor('#E3F2FD')),
+        ('FONTNAME', (0, 0), (-1, -1), 'MalgunGothic'),
+        ('FONTNAME', (0, 0), (-1, 0), 'MalgunGothic-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 7),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+        ('ALIGN', (2, 0), (2, -1), 'CENTER'),
+        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+        ('PADDING', (0, 0), (-1, -1), 4),
+        # Green rows for correct
+        ('BACKGROUND', (0, 1), (-1, 7), HexColor('#F0FDF4')),
+        # Red rows for errors
+        ('BACKGROUND', (0, 8), (-1, 13), HexColor('#FEF2F2')),
+    ]))
+    elements.append(comp_table)
+    elements.append(Paragraph("표 3: 실제 인터페이스와 Claude 묘사의 직접 비교.", styles['TableCaption']))
+
+    elements.append(Paragraph(
+        "실제 스크린샷과의 비교에서 <b>13개 항목 중 7개가 정확</b>(54%)하였고, "
+        "4개가 오류, 2개가 누락이었다. 핵심 구조(터미널 기반, 박스 드로잉, 하단 입력, "
+        "모델/디렉토리 표시)는 정확했지만, 세부 요소(프롬프트 문자, 레이아웃 컬럼 수, "
+        "로고 형태)에서 오류를 보였다. 이는 앞서 관찰된 \"고수준 정확, 세부 부정확\" 패턴과 일치한다.",
+        styles['BodyText']
+    ))
+
     # ==================== 6. 결론 ====================
     elements.append(Paragraph("6. 결론", styles['SectionTitle']))
 
