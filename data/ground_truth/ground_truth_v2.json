@@ -1,0 +1,1001 @@
+{
+  "version": "2.0",
+  "collected_date": "2026-03-04",
+  "claude_code_version": "2.1.66",
+  "sources": {
+    "screenshot_startup": {
+      "path": "data/screenshots/startup.png",
+      "description": "Startup screen in project directory",
+      "status": "available_from_v1"
+    },
+    "system_prompt": {
+      "description": "System prompt observed by Claude inside Claude Code",
+      "status": "empirically_verified"
+    },
+    "cli_help": {
+      "description": "Output of claude --help, claude --version",
+      "status": "empirically_verified"
+    },
+    "official_docs": {
+      "description": "Official Anthropic documentation at code.claude.com",
+      "status": "documentation_based"
+    },
+    "deepwiki_source": {
+      "description": "DeepWiki source code analysis",
+      "status": "documentation_based"
+    },
+    "empirical_session": {
+      "description": "Direct observation during live Claude Code session",
+      "status": "empirically_verified"
+    }
+  },
+
+  "facts": [
+    {
+      "id": "GT001",
+      "domain": "D1",
+      "statement": "Claude Code startup screen uses a two-column layout inside a rounded-corner bordered box",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT002",
+      "domain": "D1",
+      "statement": "The top border of the startup box displays 'Claude Code v{VERSION}' (e.g., 'Claude Code v2.1.66')",
+      "value": "Claude Code v2.1.66",
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT003",
+      "domain": "D1",
+      "statement": "The startup box uses Unicode rounded-corner characters: ╭ (top-left), ╮ (top-right), ╰ (bottom-left), ╯ (bottom-right)",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT004",
+      "domain": "D1",
+      "statement": "The left column contains a personalized greeting 'Welcome back [Name]!' with the user's actual name",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT005",
+      "domain": "D1",
+      "statement": "The startup logo is a small 3-line abstract ASCII art using block characters (▐▛███▜▌ / ▝▜█████▛▘ / ▘▘ ▝▝), NOT a large 'CLAUDE CODE' block-letter banner",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT006",
+      "domain": "D1",
+      "statement": "The left column shows model info: 'Opus 4.6 (1M context) · API Usage Billing'",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT007",
+      "domain": "D1",
+      "statement": "The left column shows organization name (e.g., 'KRAFTON Inc.')",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT008",
+      "domain": "D1",
+      "statement": "The left column shows the working directory path",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT009",
+      "domain": "D1",
+      "statement": "The right column contains 'Tips for getting started' section",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT010",
+      "domain": "D1",
+      "statement": "The right column contains 'Recent activity' section",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT011",
+      "domain": "D1",
+      "statement": "There is NO large 'CLAUDE CODE' ASCII art block-letter banner",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT012",
+      "domain": "D2",
+      "statement": "The prompt character is ❯ (U+276F, heavy right-pointing angle quotation mark ornament)",
+      "value": "❯",
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT013",
+      "domain": "D2",
+      "statement": "The prompt character is NOT '>' (greater-than sign)",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT014",
+      "domain": "D2",
+      "statement": "The input area is located at the bottom of the conversation area",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT015",
+      "domain": "D2",
+      "statement": "Multiline input methods: backslash+Enter (all terminals), Option+Enter (macOS), Shift+Enter (iTerm2/WezTerm/Ghostty/Kitty), Ctrl+J (line feed)",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT016",
+      "domain": "D2",
+      "statement": "Quick prefixes: '/' opens command list, '!' runs bash directly, '@' triggers file path autocomplete",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT017",
+      "domain": "D2",
+      "statement": "Ctrl+G opens the system text editor (EDITOR/VISUAL env var) for composing complex input",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT018",
+      "domain": "D2",
+      "statement": "A grayed-out prompt suggestion from project git history appears in the input area on startup",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT019",
+      "domain": "D2",
+      "statement": "Below the input area is a horizontal separator line and then the status/permission mode line",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT020",
+      "domain": "D3",
+      "statement": "Tool execution display uses present tense while running (e.g., 'Reading...') and past tense when done (e.g., 'Read 5 files')",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT021",
+      "domain": "D3",
+      "statement": "Claude Code does NOT render HTML/CSS in the terminal; it uses ANSI color codes and markdown",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT022",
+      "domain": "D3",
+      "statement": "Claude Code renders markdown using the CommonMark specification",
+      "value": true,
+      "source": "system_prompt",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT023",
+      "domain": "D3",
+      "statement": "Extended thinking shows a shimmer animation; verbose mode (Ctrl+O) toggles thinking content display",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT024",
+      "domain": "D3",
+      "statement": "Three built-in output styles exist: Default, Explanatory, and Learning",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT025",
+      "domain": "D3",
+      "statement": "Tokens appear progressively as they are generated (streaming output)",
+      "value": true,
+      "source": "empirical_session",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT026",
+      "domain": "D4",
+      "statement": "Permission dialogs appear inline in the terminal, NOT as popup/modal windows",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT027",
+      "domain": "D4",
+      "statement": "Permission dialog options are navigated using Tab or Left/Right arrow keys (tab-style)",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT028",
+      "domain": "D4",
+      "statement": "Permission dialog shows: tool name, action being requested, specific command/file involved",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT029",
+      "domain": "D4",
+      "statement": "Five permission modes: default (Normal), acceptEdits, plan, dontAsk, bypassPermissions",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT030",
+      "domain": "D4",
+      "statement": "Permission modes are cycled with Shift+Tab or Alt+M",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT031",
+      "domain": "D4",
+      "statement": "Read-only tools (file reads, Grep) do not require approval by default",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT032",
+      "domain": "D4",
+      "statement": "Bash commands and file modifications require approval by default",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT033",
+      "domain": "D4",
+      "statement": "Permission dialog actions include: Allow, Allow always / 'Yes don't ask again', Deny",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT034",
+      "domain": "D4",
+      "statement": "The status line temporarily hides during permission prompts",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT035",
+      "domain": "D5",
+      "statement": "The status line is a customizable bar at the bottom that can run any shell script",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT036",
+      "domain": "D5",
+      "statement": "Context usage progress bar colors: green (under 70%), yellow (70-89%), red (90%+)",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT037",
+      "domain": "D5",
+      "statement": "At startup, the status area shows permission mode indicator like '⏵⏵ bypass permissions on (shift+tab to cycle)'",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT038",
+      "domain": "D5",
+      "statement": "The status line does NOT show cost/tokens at startup by default; it shows the permission mode",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT039",
+      "domain": "D5",
+      "statement": "Status line can be customized via /statusline command to show model, cost, git branch, context usage, etc.",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT040",
+      "domain": "D6",
+      "statement": "Ctrl+T toggles the task list",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT041",
+      "domain": "D6",
+      "statement": "Shift+Tab (or Alt+M) cycles through permission modes",
+      "value": true,
+      "source": "screenshot_startup",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT042",
+      "domain": "D6",
+      "statement": "Esc+Esc opens the rewind/checkpoint interface",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT043",
+      "domain": "D6",
+      "statement": "Escape while Claude is generating interrupts/cancels the generation",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT044",
+      "domain": "D6",
+      "statement": "Ctrl+G opens the system text editor for composing input",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT045",
+      "domain": "D6",
+      "statement": "Claude Code has a built-in Vim mode toggled with /vim command",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT046",
+      "domain": "D6",
+      "statement": "Slash commands include: /clear, /compact, /context, /exit, /export, /fork, /rename, /resume, /config, /fast, /model, /theme, /vim, /diff, /init, /cost, /help, /stats, /usage, /copy, /desktop, /statusline, /permissions, and many more",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT047",
+      "domain": "D7",
+      "statement": "Claude Code offers 6 built-in themes: dark, light, dark-colorblind, light-colorblind, dark-ANSI, light-ANSI",
+      "value": 6,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT048",
+      "domain": "D7",
+      "statement": "Themes are accessible via /theme command which opens a picker menu",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT049",
+      "domain": "D7",
+      "statement": "Syntax highlighting in code blocks is only available in the native build, not npm-installed version",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT050",
+      "domain": "D7",
+      "statement": "The /theme command name is '/theme'",
+      "value": "/theme",
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT051",
+      "domain": "D8",
+      "statement": "/diff command opens an interactive diff viewer showing uncommitted changes and per-turn diffs",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT052",
+      "domain": "D8",
+      "statement": "In diff view: added lines shown in green with + prefix, removed lines in red with - prefix",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT053",
+      "domain": "D8",
+      "statement": "In diff viewer: Left/Right arrows switch between current git diff and individual Claude turns; Up/Down arrows browse files",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT054",
+      "domain": "D8",
+      "statement": "Every user prompt creates a new checkpoint; checkpoints persist across sessions",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT055",
+      "domain": "D8",
+      "statement": "Rewind interface (Esc+Esc) options: Restore code and conversation, Restore conversation, Restore code, Summarize from here, Never mind",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT056",
+      "domain": "D9",
+      "statement": "When rate-limited, fast mode automatically falls back to standard mode",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT057",
+      "domain": "D9",
+      "statement": "Fast mode lightning bolt icon turns gray during rate limit cooldown",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT058",
+      "domain": "D9",
+      "statement": "Claude Code automatically compresses conversation history when approaching context limits",
+      "value": true,
+      "source": "system_prompt",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT059",
+      "domain": "D9",
+      "statement": "Error messages are color-coded (typically red) with error type and human-readable message",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT060",
+      "domain": "D9",
+      "statement": "API errors include retry behavior; rate limit/overload messages display in status area",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT061",
+      "domain": "D10",
+      "statement": "Claude Code does NOT have a sidebar panel with conversation history",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT062",
+      "domain": "D10",
+      "statement": "Claude Code does NOT display avatar icons or profile pictures next to messages",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT063",
+      "domain": "D10",
+      "statement": "Claude Code does NOT render inline images in terminal output",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT064",
+      "domain": "D10",
+      "statement": "Claude Code does NOT have a graphical file tree panel",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT065",
+      "domain": "D10",
+      "statement": "Claude Code is keyboard-only terminal application with no mouse-driven interactions or graphical panels",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT066",
+      "domain": "D1",
+      "statement": "Claude Code is a terminal-based, text-only interface with no graphical GUI",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT067",
+      "domain": "D1",
+      "statement": "The interface is single-column, full-width terminal layout with vertical scrolling during conversation (startup is two-column within a box)",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT068",
+      "domain": "D3",
+      "statement": "Markdown rendered in monospace font using CommonMark specification",
+      "value": true,
+      "source": "system_prompt",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT069",
+      "domain": "D6",
+      "statement": "Ctrl+O toggles verbose output (shows detailed tool usage and thinking content)",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT070",
+      "domain": "D5",
+      "statement": "PR status link in footer with colored underline: green=approved, yellow=pending, red=changes requested, gray=draft, purple=merged",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT071",
+      "domain": "D7",
+      "statement": "Syntax highlighting toggle is Ctrl+T inside the /theme picker (not generally available outside theme picker)",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT072",
+      "domain": "D9",
+      "statement": "'Claude Code on Windows requires git-bash' error message shown when Git for Windows is not installed",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT073",
+      "domain": "D3",
+      "statement": "The thinking indicator (shimmer animation) appears before/above the response text while Claude processes",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    },
+    {
+      "id": "GT074",
+      "domain": "D6",
+      "statement": "Single Escape while generating: interrupts generation. Esc+Esc while idle: opens rewind/checkpoint interface",
+      "value": true,
+      "source": "official_docs",
+      "confidence": "documented"
+    }
+  ],
+
+  "prompt_answers": {
+    "P01": {
+      "type": "free_recall",
+      "key_facts": ["GT001", "GT002", "GT003", "GT004", "GT005", "GT006", "GT007", "GT008", "GT009", "GT010", "GT012", "GT037"],
+      "expected_elements": [
+        "Two-column layout inside a rounded-corner bordered box (╭╮╰╯)",
+        "Version shown in top border: 'Claude Code v2.1.66'",
+        "Left column: personalized greeting ('Welcome back [Name]!'), small abstract logo, model info, organization, working directory",
+        "Right column: 'Tips for getting started', 'Recent activity'",
+        "Input area below with ❯ prompt character",
+        "Status line showing permission mode at bottom"
+      ]
+    },
+    "P02": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "Two-column layout with welcome info left, tips/activity right, inside bordered box with rounded corners"
+    },
+    "P03": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "The logo is a small 3-line abstract symbol using block characters (▐▛███▜▌), NOT a large block-letter banner"
+    },
+    "P04": {
+      "type": "spatial",
+      "key_facts": ["GT004", "GT005", "GT006", "GT007", "GT008"],
+      "expected_elements": [
+        "Personalized greeting: 'Welcome back [Name]!'",
+        "Small abstract ASCII art logo (3 lines using ▐▛███▜▌ characters)",
+        "Model info: 'Opus 4.6 (1M context)'",
+        "Organization name",
+        "Working directory path"
+      ]
+    },
+    "P05": {
+      "type": "exact_detail",
+      "correct_answer": "Small 3-line abstract logo using Unicode block characters: ▐▛███▜▌ / ▝▜█████▛▘ / ▘▘ ▝▝",
+      "key_facts": ["GT005"],
+      "tolerance": "Must describe small/abstract nature; exact characters earn highest score"
+    },
+    "P06": {
+      "type": "true_false",
+      "correct_answer": true,
+      "explanation": "Yes, it shows 'Welcome back [Name]!' with the user's actual name"
+    },
+    "P07": {
+      "type": "exact_detail",
+      "correct_answer": "Claude Code v{VERSION} (e.g., 'Claude Code v2.1.66')",
+      "key_facts": ["GT002"]
+    },
+    "P08": {
+      "type": "free_recall",
+      "key_facts": ["GT012", "GT013", "GT014", "GT015", "GT016", "GT017", "GT018", "GT019"],
+      "expected_elements": [
+        "Prompt character: ❯ (U+276F), NOT >",
+        "Input area at bottom of conversation",
+        "Multiline: backslash+Enter, Shift+Enter (some terminals), Ctrl+J, Option+Enter (macOS)",
+        "Quick prefixes: / for commands, ! for bash, @ for file mentions",
+        "Ctrl+G opens external editor",
+        "Grayed-out prompt suggestion from git history",
+        "Horizontal separator line above/below input area",
+        "Status/permission line below input"
+      ]
+    },
+    "P09": {
+      "type": "forced_choice",
+      "correct_answer": "C",
+      "explanation": "The prompt character is ❯ (U+276F, heavy right-pointing angle quotation mark ornament)"
+    },
+    "P10": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "The prompt character is ❯ (U+276F), not the standard '>' character"
+    },
+    "P11": {
+      "type": "spatial",
+      "key_facts": ["GT019", "GT037"],
+      "expected_elements": [
+        "A horizontal separator line",
+        "Status/permission mode indicator (e.g., '⏵⏵ bypass permissions on (shift+tab to cycle)')"
+      ]
+    },
+    "P12": {
+      "type": "exact_detail",
+      "key_facts": ["GT016"],
+      "correct_answer": "/ (slash) opens command/skill list, ! (exclamation) runs bash directly, @ (at) triggers file path autocomplete"
+    },
+    "P13": {
+      "type": "forced_choice",
+      "correct_answer": "D",
+      "explanation": "All methods work in supported terminals: Shift+Enter, backslash+Enter, Ctrl+J"
+    },
+    "P14": {
+      "type": "free_recall",
+      "key_facts": ["GT020", "GT025"],
+      "expected_elements": [
+        "In-progress: present tense verbs (e.g., 'Reading...', 'Searching...')",
+        "Completed: past tense (e.g., 'Read', 'Searched') with final counts",
+        "Tool calls displayed inline with tool name and parameters",
+        "Streaming/progressive token output"
+      ]
+    },
+    "P15": {
+      "type": "forced_choice",
+      "correct_answer": "A",
+      "explanation": "Present progressive while running ('Reading...'), past tense when done ('Read 5 files')"
+    },
+    "P16": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "Claude Code uses ANSI color codes and markdown rendering, not HTML/CSS"
+    },
+    "P17": {
+      "type": "spatial",
+      "key_facts": ["GT023", "GT073"],
+      "expected_elements": [
+        "Thinking indicator (shimmer animation) appears before/above the response text",
+        "Thinking content can be shown via Ctrl+O verbose mode",
+        "Thinking blocks remain interactive during processing (can be interrupted with Esc)"
+      ]
+    },
+    "P18": {
+      "type": "exact_detail",
+      "correct_answer": "CommonMark",
+      "key_facts": ["GT022", "GT068"]
+    },
+    "P19": {
+      "type": "true_false",
+      "correct_answer": true,
+      "explanation": "Three built-in output styles: Default, Explanatory, and Learning. Custom styles also possible."
+    },
+    "P20": {
+      "type": "free_recall",
+      "key_facts": ["GT026", "GT027", "GT028", "GT033", "GT034"],
+      "expected_elements": [
+        "Dialogs appear inline in terminal (not popup/modal)",
+        "Show tool name, action, specific command/file",
+        "Tab-style navigation with Left/Right arrows",
+        "Options: Allow, Allow always, Deny",
+        "Status line hides during permission prompts",
+        "Blocking: pauses all processing until user responds"
+      ]
+    },
+    "P21": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "Users navigate with Tab or Left/Right arrow keys to cycle through tab-style options"
+    },
+    "P22": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "Permission dialogs appear inline in the terminal conversation flow, NOT as popup/modal windows"
+    },
+    "P23": {
+      "type": "spatial",
+      "key_facts": ["GT026", "GT027", "GT028", "GT033"],
+      "expected_elements": [
+        "Tool name and description of action at top",
+        "Details: command string (for Bash), file path + old/new text (for Edit), file path + content (for Write)",
+        "Action buttons/tabs: Allow, Allow always, Deny at bottom",
+        "Appears inline in terminal flow"
+      ]
+    },
+    "P24": {
+      "type": "exact_detail",
+      "key_facts": ["GT029"],
+      "correct_answer": "default (Normal): prompts on first use; acceptEdits: auto-accepts file edits; plan: analyze only, no modifications; dontAsk: auto-denies unless pre-approved; bypassPermissions: skips all prompts"
+    },
+    "P25": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "Read-only tools (file reads, Grep) are auto-approved; write operations (Bash, Edit, Write) require explicit approval"
+    },
+    "P26": {
+      "type": "free_recall",
+      "key_facts": ["GT035", "GT036", "GT037", "GT038", "GT039"],
+      "expected_elements": [
+        "Customizable bar at the bottom of the terminal",
+        "Can run any shell script configured by user",
+        "At startup shows permission mode, not cost/tokens",
+        "Can show: session name, PR status, background task count, context usage, git branch, cost",
+        "Context bar colors: green (<70%), yellow (70-89%), red (90%+)",
+        "Configurable via /statusline command"
+      ]
+    },
+    "P27": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "A colored progress bar that changes: green (<70%), yellow (70-89%), red (90%+)"
+    },
+    "P28": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "At startup the status line shows the permission mode indicator (e.g., '⏵⏵ bypass permissions on'), not cost/tokens"
+    },
+    "P29": {
+      "type": "exact_detail",
+      "key_facts": ["GT037"],
+      "correct_answer": "⏵⏵ [permission mode name] on (shift+tab to cycle) — e.g., '⏵⏵ bypass permissions on (shift+tab to cycle)'"
+    },
+    "P30": {
+      "type": "spatial",
+      "key_facts": ["GT035", "GT037", "GT039"],
+      "expected_elements": [
+        "At startup: permission mode indicator with ⏵⏵ symbols, mode name, '(shift+tab to cycle)'",
+        "When configured: can show model name, session name, PR status, context bar, cost, git branch etc. from left to right"
+      ]
+    },
+    "P31": {
+      "type": "free_recall",
+      "key_facts": ["GT046"],
+      "expected_elements": [
+        "Session: /clear, /compact, /context, /exit, /export, /fork, /rename, /resume, /rewind",
+        "Config: /config, /fast, /keybindings, /model, /output-style, /permissions, /theme, /vim",
+        "Dev: /add-dir, /diff, /init, /pr-comments, /review, /security-review",
+        "Tools: /agents, /hooks, /ide, /mcp, /memory, /plugin, /skills",
+        "Info: /cost, /doctor, /feedback, /help, /release-notes, /stats, /status, /usage",
+        "Account: /copy, /desktop, /login, /logout, /statusline, /tasks, /upgrade"
+      ]
+    },
+    "P32": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "Ctrl+T toggles the task list"
+    },
+    "P33": {
+      "type": "true_false",
+      "correct_answer": true,
+      "explanation": "Yes, /vim command enables Vim editing mode for the input area with NORMAL/INSERT mode indicators"
+    },
+    "P34": {
+      "type": "spatial",
+      "key_facts": ["GT042", "GT043", "GT074"],
+      "expected_elements": [
+        "Escape while generating: interrupts/cancels the current generation",
+        "Esc+Esc while idle: opens the rewind/checkpoint interface",
+        "Rewind shows a scrollable list of user prompts to select from"
+      ]
+    },
+    "P35": {
+      "type": "exact_detail",
+      "correct_answer": "Shift+Tab (or Alt+M)",
+      "key_facts": ["GT030", "GT041"]
+    },
+    "P36": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "Ctrl+G opens the system text editor (EDITOR/VISUAL env var) for composing input"
+    },
+    "P37": {
+      "type": "free_recall",
+      "key_facts": ["GT047", "GT048", "GT049"],
+      "expected_elements": [
+        "6 built-in themes: dark, light, dark-colorblind, light-colorblind, dark-ANSI, light-ANSI",
+        "Accessible via /theme command",
+        "Theme picker menu shows all options",
+        "Syntax highlighting only in native build",
+        "Changes take effect immediately"
+      ]
+    },
+    "P38": {
+      "type": "forced_choice",
+      "correct_answer": "C",
+      "explanation": "6 themes: dark, light, dark-colorblind, light-colorblind, dark-ANSI, light-ANSI"
+    },
+    "P39": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "Syntax highlighting is only available in the native (compiled) build, NOT in the npm-installed version"
+    },
+    "P40": {
+      "type": "spatial",
+      "key_facts": ["GT048", "GT050"],
+      "expected_elements": [
+        "Type /theme to invoke the theme picker",
+        "Opens a picker menu listing all 6 themes",
+        "Can also access via /config"
+      ]
+    },
+    "P41": {
+      "type": "exact_detail",
+      "correct_answer": "/theme",
+      "key_facts": ["GT050"]
+    },
+    "P42": {
+      "type": "free_recall",
+      "key_facts": ["GT051", "GT052", "GT053"],
+      "expected_elements": [
+        "Accessed via /diff command",
+        "Interactive diff viewer",
+        "Shows uncommitted changes and per-turn diffs",
+        "Added lines in green with + prefix",
+        "Removed lines in red with - prefix",
+        "Left/Right arrows switch between git diff and turn diffs",
+        "Up/Down arrows browse files"
+      ]
+    },
+    "P43": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "Added lines in green with + prefix, removed lines in red with - prefix (unified diff format)"
+    },
+    "P44": {
+      "type": "true_false",
+      "correct_answer": true,
+      "explanation": "Yes, every user prompt creates a new checkpoint, persisting across sessions"
+    },
+    "P45": {
+      "type": "spatial",
+      "key_facts": ["GT053"],
+      "expected_elements": [
+        "Left/Right arrows: switch between current git diff and individual Claude turn diffs",
+        "Up/Down arrows: browse files within a diff",
+        "Diff stats show lines added/removed"
+      ]
+    },
+    "P46": {
+      "type": "exact_detail",
+      "key_facts": ["GT055"],
+      "correct_answer": "Restore code and conversation, Restore conversation, Restore code, Summarize from here, Never mind"
+    },
+    "P47": {
+      "type": "free_recall",
+      "key_facts": ["GT056", "GT057", "GT058", "GT059", "GT060"],
+      "expected_elements": [
+        "Rate limit: fast mode auto-falls back to standard; lightning bolt turns gray",
+        "API errors: color-coded error messages (red), error type and human-readable message",
+        "Retry behavior for transient errors",
+        "Auth error: specific error messages (e.g., 'App unavailable in region')",
+        "Token warnings in status line area"
+      ]
+    },
+    "P48": {
+      "type": "forced_choice",
+      "correct_answer": "B",
+      "explanation": "Fast mode automatically falls back to the non-fast model and continues"
+    },
+    "P49": {
+      "type": "true_false",
+      "correct_answer": true,
+      "explanation": "Yes, auto-compression happens when approaching context window limits"
+    },
+    "P50": {
+      "type": "exact_detail",
+      "key_facts": ["GT057", "GT060"],
+      "correct_answer": "Fast mode lightning bolt icon turns gray during cooldown; retries with standard mode; notifications appear in status line area"
+    },
+    "P51": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "Claude Code is terminal-based with no sidebar; conversation history is accessed via /resume command"
+    },
+    "P52": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "No avatar icons or profile pictures; it's a text-only terminal interface"
+    },
+    "P53": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "Claude Code cannot render inline images in terminal output; images are referenced as file paths"
+    },
+    "P54": {
+      "type": "true_false",
+      "correct_answer": false,
+      "explanation": "No file tree panel; it's a single-column terminal interface. Files are accessed via @ mentions or tool calls"
+    },
+    "P55": {
+      "type": "forced_choice",
+      "correct_answer": "D",
+      "explanation": "None of the above — Claude Code is a keyboard-driven terminal application without graphical panels or inline images"
+    }
+  }
+}

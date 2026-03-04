@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P32",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.394494",
+  "raw_text": "{\"prompt_id\": \"P32\", \"answer\": \"B\", \"confidence\": 0.25, \"claims\": [{\"statement\": \"Ctrl+T toggles the task list in Claude Code\", \"confidence\": 0.25}], \"uncertainty_notes\": \"Very low confidence; guessing based on mnemonic.\"}",
+  "parsed": {
+    "prompt_id": "P32",
+    "answer": "B",
+    "confidence": 0.25,
+    "claims": [
+      {
+        "statement": "Ctrl+T toggles the task list in Claude Code",
+        "confidence": 0.25
+      }
+    ],
+    "uncertainty_notes": "Very low confidence; guessing based on mnemonic."
+  },
+  "parse_success": true
+}

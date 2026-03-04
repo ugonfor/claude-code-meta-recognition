@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P15",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.382447",
+  "raw_text": "{\"prompt_id\": \"P15\", \"answer\": \"A\", \"confidence\": 0.62, \"claims\": [{\"statement\": \"Claude Code uses present progressive while running (e.g., 'Reading...')\", \"confidence\": 0.65}, {\"statement\": \"Claude Code uses past tense when done (e.g., 'Read 5 files')\", \"confidence\": 0.65}], \"uncertainty_notes\": \"Option A aligns with my understanding.\"}",
+  "parsed": {
+    "prompt_id": "P15",
+    "answer": "A",
+    "confidence": 0.62,
+    "claims": [
+      {
+        "statement": "Claude Code uses present progressive while running (e.g., 'Reading...')",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Claude Code uses past tense when done (e.g., 'Read 5 files')",
+        "confidence": 0.65
+      }
+    ],
+    "uncertainty_notes": "Option A aligns with my understanding."
+  },
+  "parse_success": true
+}

@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P43",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.573031",
+  "raw_text": "{\"prompt_id\": \"P43\", \"answer\": \"B\", \"confidence\": 0.55, \"claims\": [{\"statement\": \"Added lines displayed in green with '+' prefix\", \"confidence\": 0.55}, {\"statement\": \"Removed lines displayed in red with '-' prefix\", \"confidence\": 0.55}], \"uncertainty_notes\": \"Standard convention but not certain it matches exactly.\"}",
+  "parsed": {
+    "prompt_id": "P43",
+    "answer": "B",
+    "confidence": 0.55,
+    "claims": [
+      {
+        "statement": "Added lines displayed in green with '+' prefix",
+        "confidence": 0.55
+      },
+      {
+        "statement": "Removed lines displayed in red with '-' prefix",
+        "confidence": 0.55
+      }
+    ],
+    "uncertainty_notes": "Standard convention but not certain it matches exactly."
+  },
+  "parse_success": true
+}

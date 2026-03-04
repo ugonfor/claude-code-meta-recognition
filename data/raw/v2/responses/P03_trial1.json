@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P03",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:03:06.672538",
+  "raw_text": "{\"prompt_id\": \"P03\", \"answer\": \"False\", \"confidence\": 0.6, \"claims\": [{\"statement\": \"Claude Code does not display a large block-letter ASCII art banner reading 'CLAUDE CODE' across the top of the terminal at startup\", \"confidence\": 0.6}], \"uncertainty_notes\": \"I believe the logo used is smaller and more of a symbolic/iconic mark rather than a large spelled-out ASCII art banner.\"}",
+  "parsed": {
+    "prompt_id": "P03",
+    "answer": "False",
+    "confidence": 0.6,
+    "claims": [
+      {
+        "statement": "Claude Code does not display a large block-letter ASCII art banner reading 'CLAUDE CODE' across the top of the terminal at startup",
+        "confidence": 0.6
+      }
+    ],
+    "uncertainty_notes": "I believe the logo used is smaller and more of a symbolic/iconic mark rather than a large spelled-out ASCII art banner."
+  },
+  "parse_success": true
+}

@@ -1,0 +1,37 @@
+{
+  "prompt_id": "P20",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.468956",
+  "raw_text": "{\"prompt_id\": \"P20\", \"answer\": \"Permission dialog appears inline in the terminal (not a popup window). It displays the tool name and specific action being requested. Options are navigated using arrow keys or Tab and confirmed with Enter. Typical options: allow once, allow always (for session), deny. Execution is paused until user responds.\", \"confidence\": 0.62, \"claims\": [{\"statement\": \"The permission dialog appears inline in the terminal, not as a popup/modal overlay\", \"confidence\": 0.78}, {\"statement\": \"The dialog displays the tool name and specific parameters\", \"confidence\": 0.72}, {\"statement\": \"Options are navigated using arrow keys or Tab and confirmed with Enter\", \"confidence\": 0.65}, {\"statement\": \"Options include variants of 'allow once', 'allow always/for session', and 'deny'\", \"confidence\": 0.6}, {\"statement\": \"Claude's execution is paused until the user responds\", \"confidence\": 0.8}], \"uncertainty_notes\": \"Moderate uncertainty about exact option labels.\"}",
+  "parsed": {
+    "prompt_id": "P20",
+    "answer": "Permission dialog appears inline in the terminal (not a popup window). It displays the tool name and specific action being requested. Options are navigated using arrow keys or Tab and confirmed with Enter. Typical options: allow once, allow always (for session), deny. Execution is paused until user responds.",
+    "confidence": 0.62,
+    "claims": [
+      {
+        "statement": "The permission dialog appears inline in the terminal, not as a popup/modal overlay",
+        "confidence": 0.78
+      },
+      {
+        "statement": "The dialog displays the tool name and specific parameters",
+        "confidence": 0.72
+      },
+      {
+        "statement": "Options are navigated using arrow keys or Tab and confirmed with Enter",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Options include variants of 'allow once', 'allow always/for session', and 'deny'",
+        "confidence": 0.6
+      },
+      {
+        "statement": "Claude's execution is paused until the user responds",
+        "confidence": 0.8
+      }
+    ],
+    "uncertainty_notes": "Moderate uncertainty about exact option labels."
+  },
+  "parse_success": true
+}

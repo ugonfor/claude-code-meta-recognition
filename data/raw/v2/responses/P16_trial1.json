@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P16",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.383445",
+  "raw_text": "{\"prompt_id\": \"P16\", \"answer\": \"False\", \"confidence\": 0.9, \"claims\": [{\"statement\": \"Claude Code does not render responses using HTML tags with CSS styling in the terminal\", \"confidence\": 0.9}, {\"statement\": \"Claude Code uses Markdown rendering adapted for terminal display with ANSI codes\", \"confidence\": 0.75}], \"uncertainty_notes\": \"Almost certainly false.\"}",
+  "parsed": {
+    "prompt_id": "P16",
+    "answer": "False",
+    "confidence": 0.9,
+    "claims": [
+      {
+        "statement": "Claude Code does not render responses using HTML tags with CSS styling in the terminal",
+        "confidence": 0.9
+      },
+      {
+        "statement": "Claude Code uses Markdown rendering adapted for terminal display with ANSI codes",
+        "confidence": 0.75
+      }
+    ],
+    "uncertainty_notes": "Almost certainly false."
+  },
+  "parse_success": true
+}

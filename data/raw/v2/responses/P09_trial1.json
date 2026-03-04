@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P09",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.296431",
+  "raw_text": "{\"prompt_id\": \"P09\", \"answer\": \"C\", \"confidence\": 0.6, \"claims\": [{\"statement\": \"Claude Code uses '❯' (U+276F) as its prompt symbol\", \"confidence\": 0.6}], \"uncertainty_notes\": \"Moderately confident based on common CLI tool patterns.\"}",
+  "parsed": {
+    "prompt_id": "P09",
+    "answer": "C",
+    "confidence": 0.6,
+    "claims": [
+      {
+        "statement": "Claude Code uses '❯' (U+276F) as its prompt symbol",
+        "confidence": 0.6
+      }
+    ],
+    "uncertainty_notes": "Moderately confident based on common CLI tool patterns."
+  },
+  "parse_success": true
+}

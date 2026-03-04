@@ -1,0 +1,33 @@
+{
+  "prompt_id": "P24",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.471960",
+  "raw_text": "{\"prompt_id\": \"P24\", \"answer\": \"Permission modes: (1) Default mode - dangerous tools require approval, (2) Auto-approve / bypass permissions mode - all tool calls auto-approved, (3) Plan/dry-run mode where actions described but not executed. Session-level allowances also available.\", \"confidence\": 0.45, \"claims\": [{\"statement\": \"There is a default mode where dangerous tools require approval\", \"confidence\": 0.72}, {\"statement\": \"There is a bypass permissions or equivalent flag that bypasses all approvals\", \"confidence\": 0.65}, {\"statement\": \"Users can grant session-level approval for a tool from within the dialog\", \"confidence\": 0.58}, {\"statement\": \"There may be a plan/dry-run mode where actions are described but not executed\", \"confidence\": 0.45}], \"uncertainty_notes\": \"Low-to-moderate confidence in completeness and exact naming.\"}",
+  "parsed": {
+    "prompt_id": "P24",
+    "answer": "Permission modes: (1) Default mode - dangerous tools require approval, (2) Auto-approve / bypass permissions mode - all tool calls auto-approved, (3) Plan/dry-run mode where actions described but not executed. Session-level allowances also available.",
+    "confidence": 0.45,
+    "claims": [
+      {
+        "statement": "There is a default mode where dangerous tools require approval",
+        "confidence": 0.72
+      },
+      {
+        "statement": "There is a bypass permissions or equivalent flag that bypasses all approvals",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Users can grant session-level approval for a tool from within the dialog",
+        "confidence": 0.58
+      },
+      {
+        "statement": "There may be a plan/dry-run mode where actions are described but not executed",
+        "confidence": 0.45
+      }
+    ],
+    "uncertainty_notes": "Low-to-moderate confidence in completeness and exact naming."
+  },
+  "parse_success": true
+}

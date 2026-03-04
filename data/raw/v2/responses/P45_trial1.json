@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P45",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.574024",
+  "raw_text": "{\"prompt_id\": \"P45\", \"answer\": \"Navigation between files uses Tab or arrow keys. Within a diff, standard up/down or vim-style j/k. Page Up/Down for scrolling.\", \"confidence\": 0.15, \"claims\": [{\"statement\": \"A '/diff' command or viewer exists in Claude Code\", \"confidence\": 0.3}, {\"statement\": \"Navigation between files uses Tab or similar key\", \"confidence\": 0.15}, {\"statement\": \"Navigation within a diff uses arrow keys or vim-style j/k\", \"confidence\": 0.2}], \"uncertainty_notes\": \"Very low confidence; speculative inference from TUI conventions.\"}",
+  "parsed": {
+    "prompt_id": "P45",
+    "answer": "Navigation between files uses Tab or arrow keys. Within a diff, standard up/down or vim-style j/k. Page Up/Down for scrolling.",
+    "confidence": 0.15,
+    "claims": [
+      {
+        "statement": "A '/diff' command or viewer exists in Claude Code",
+        "confidence": 0.3
+      },
+      {
+        "statement": "Navigation between files uses Tab or similar key",
+        "confidence": 0.15
+      },
+      {
+        "statement": "Navigation within a diff uses arrow keys or vim-style j/k",
+        "confidence": 0.2
+      }
+    ],
+    "uncertainty_notes": "Very low confidence; speculative inference from TUI conventions."
+  },
+  "parse_success": true
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P19",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.384951",
+  "raw_text": "{\"prompt_id\": \"P19\", \"answer\": \"False\", \"confidence\": 0.8, \"claims\": [{\"statement\": \"Claude Code does not have three built-in output styles called Default, Explanatory, and Learning\", \"confidence\": 0.8}], \"uncertainty_notes\": \"No knowledge of these named output styles.\"}",
+  "parsed": {
+    "prompt_id": "P19",
+    "answer": "False",
+    "confidence": 0.8,
+    "claims": [
+      {
+        "statement": "Claude Code does not have three built-in output styles called Default, Explanatory, and Learning",
+        "confidence": 0.8
+      }
+    ],
+    "uncertainty_notes": "No knowledge of these named output styles."
+  },
+  "parse_success": true
+}

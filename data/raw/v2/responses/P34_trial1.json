@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P34",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.396493",
+  "raw_text": "{\"prompt_id\": \"P34\", \"answer\": \"Escape while generating: interrupts/cancels the current generation. Escape when idle: clears input or has no effect.\", \"confidence\": 0.5, \"claims\": [{\"statement\": \"Pressing Escape while generating cancels the current generation\", \"confidence\": 0.65}, {\"statement\": \"Pressing Escape when idle clears the current input or has minimal effect\", \"confidence\": 0.4}, {\"statement\": \"The two Escape behaviors are distinct depending on generation state\", \"confidence\": 0.55}], \"uncertainty_notes\": \"Generation interrupt feels standard; idle behavior uncertain.\"}",
+  "parsed": {
+    "prompt_id": "P34",
+    "answer": "Escape while generating: interrupts/cancels the current generation. Escape when idle: clears input or has no effect.",
+    "confidence": 0.5,
+    "claims": [
+      {
+        "statement": "Pressing Escape while generating cancels the current generation",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Pressing Escape when idle clears the current input or has minimal effect",
+        "confidence": 0.4
+      },
+      {
+        "statement": "The two Escape behaviors are distinct depending on generation state",
+        "confidence": 0.55
+      }
+    ],
+    "uncertainty_notes": "Generation interrupt feels standard; idle behavior uncertain."
+  },
+  "parse_success": true
+}

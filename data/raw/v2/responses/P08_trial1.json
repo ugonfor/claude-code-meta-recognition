@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P08",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.295431",
+  "raw_text": "{\"prompt_id\": \"P08\", \"answer\": \"The Claude Code input area is a terminal-based prompt. It displays a prompt symbol (the '❯' character, a heavy right-pointing angle quotation mark ornament) followed by a cursor. The cursor is a standard terminal block or underline cursor. Multiline input is supported: pressing Shift+Enter inserts a newline without submitting. The input area is at the bottom of the terminal screen. There is contextual status information near the input area.\", \"confidence\": 0.45, \"claims\": [{\"statement\": \"The prompt symbol is '❯' (U+276F)\", \"confidence\": 0.65}, {\"statement\": \"Shift+Enter inserts a newline without submitting\", \"confidence\": 0.6}, {\"statement\": \"The input area expands vertically for multiline input\", \"confidence\": 0.55}, {\"statement\": \"The input area is positioned at the bottom of the terminal screen\", \"confidence\": 0.7}, {\"statement\": \"There is contextual status information near the input area\", \"confidence\": 0.45}, {\"statement\": \"The cursor is a standard terminal cursor\", \"confidence\": 0.5}], \"uncertainty_notes\": \"Limited precise knowledge of exact visual details.\"}",
+  "parsed": {
+    "prompt_id": "P08",
+    "answer": "The Claude Code input area is a terminal-based prompt. It displays a prompt symbol (the '❯' character, a heavy right-pointing angle quotation mark ornament) followed by a cursor. The cursor is a standard terminal block or underline cursor. Multiline input is supported: pressing Shift+Enter inserts a newline without submitting. The input area is at the bottom of the terminal screen. There is contextual status information near the input area.",
+    "confidence": 0.45,
+    "claims": [
+      {
+        "statement": "The prompt symbol is '❯' (U+276F)",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Shift+Enter inserts a newline without submitting",
+        "confidence": 0.6
+      },
+      {
+        "statement": "The input area expands vertically for multiline input",
+        "confidence": 0.55
+      },
+      {
+        "statement": "The input area is positioned at the bottom of the terminal screen",
+        "confidence": 0.7
+      },
+      {
+        "statement": "There is contextual status information near the input area",
+        "confidence": 0.45
+      },
+      {
+        "statement": "The cursor is a standard terminal cursor",
+        "confidence": 0.5
+      }
+    ],
+    "uncertainty_notes": "Limited precise knowledge of exact visual details."
+  },
+  "parse_success": true
+}

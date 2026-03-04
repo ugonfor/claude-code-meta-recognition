@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P28",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.557487",
+  "raw_text": "{\"prompt_id\": \"P28\", \"answer\": \"False\", \"confidence\": 0.45, \"claims\": [{\"statement\": \"The status line at startup does not display token cost in USD\", \"confidence\": 0.45}], \"uncertainty_notes\": \"Cost tracking exists but may not be displayed at startup by default.\"}",
+  "parsed": {
+    "prompt_id": "P28",
+    "answer": "False",
+    "confidence": 0.45,
+    "claims": [
+      {
+        "statement": "The status line at startup does not display token cost in USD",
+        "confidence": 0.45
+      }
+    ],
+    "uncertainty_notes": "Cost tracking exists but may not be displayed at startup by default."
+  },
+  "parse_success": true
+}

@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P46",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.575023",
+  "raw_text": "{\"prompt_id\": \"P46\", \"answer\": \"If checkpoint/rewind exists, options might include: 'Rewind to this checkpoint', 'Keep current state', or 'Cancel'.\", \"confidence\": 0.1, \"claims\": [{\"statement\": \"Claude Code has a checkpoint/rewind UI with action options\", \"confidence\": 0.35}, {\"statement\": \"Options include a 'rewind/restore' action and a 'cancel/keep' action\", \"confidence\": 0.15}], \"uncertainty_notes\": \"Cannot list exact wording; flagging high uncertainty.\"}",
+  "parsed": {
+    "prompt_id": "P46",
+    "answer": "If checkpoint/rewind exists, options might include: 'Rewind to this checkpoint', 'Keep current state', or 'Cancel'.",
+    "confidence": 0.1,
+    "claims": [
+      {
+        "statement": "Claude Code has a checkpoint/rewind UI with action options",
+        "confidence": 0.35
+      },
+      {
+        "statement": "Options include a 'rewind/restore' action and a 'cancel/keep' action",
+        "confidence": 0.15
+      }
+    ],
+    "uncertainty_notes": "Cannot list exact wording; flagging high uncertainty."
+  },
+  "parse_success": true
+}

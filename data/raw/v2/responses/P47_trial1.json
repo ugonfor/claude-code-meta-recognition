@@ -1,0 +1,37 @@
+{
+  "prompt_id": "P47",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.663063",
+  "raw_text": "{\"prompt_id\": \"P47\", \"answer\": \"Rate limit: text message indicating limit hit, automatic retry with backoff. API errors: 'Error:' prefixed message with status code. Auth errors: prompt to run 'claude login' or check API key.\", \"confidence\": 0.3, \"claims\": [{\"statement\": \"Rate limit errors display a text message indicating the limit has been hit\", \"confidence\": 0.45}, {\"statement\": \"Claude Code implements automatic retry with backoff on rate limit errors\", \"confidence\": 0.4}, {\"statement\": \"API errors show an 'Error:' prefixed message with HTTP status code\", \"confidence\": 0.3}, {\"statement\": \"Authentication errors prompt the user to run 'claude login' or check API key\", \"confidence\": 0.35}, {\"statement\": \"Authentication errors halt further processing until resolved\", \"confidence\": 0.4}], \"uncertainty_notes\": \"Low confidence in specific visual details of each error type.\"}",
+  "parsed": {
+    "prompt_id": "P47",
+    "answer": "Rate limit: text message indicating limit hit, automatic retry with backoff. API errors: 'Error:' prefixed message with status code. Auth errors: prompt to run 'claude login' or check API key.",
+    "confidence": 0.3,
+    "claims": [
+      {
+        "statement": "Rate limit errors display a text message indicating the limit has been hit",
+        "confidence": 0.45
+      },
+      {
+        "statement": "Claude Code implements automatic retry with backoff on rate limit errors",
+        "confidence": 0.4
+      },
+      {
+        "statement": "API errors show an 'Error:' prefixed message with HTTP status code",
+        "confidence": 0.3
+      },
+      {
+        "statement": "Authentication errors prompt the user to run 'claude login' or check API key",
+        "confidence": 0.35
+      },
+      {
+        "statement": "Authentication errors halt further processing until resolved",
+        "confidence": 0.4
+      }
+    ],
+    "uncertainty_notes": "Low confidence in specific visual details of each error type."
+  },
+  "parse_success": true
+}

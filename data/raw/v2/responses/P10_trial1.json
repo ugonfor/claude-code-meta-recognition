@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P10",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.297431",
+  "raw_text": "{\"prompt_id\": \"P10\", \"answer\": \"False\", \"confidence\": 0.6, \"claims\": [{\"statement\": \"Claude Code does NOT use the standard '>' character as its prompt symbol\", \"confidence\": 0.6}, {\"statement\": \"Claude Code uses a more stylized prompt symbol such as '❯'\", \"confidence\": 0.58}], \"uncertainty_notes\": \"Moderate confidence.\"}",
+  "parsed": {
+    "prompt_id": "P10",
+    "answer": "False",
+    "confidence": 0.6,
+    "claims": [
+      {
+        "statement": "Claude Code does NOT use the standard '>' character as its prompt symbol",
+        "confidence": 0.6
+      },
+      {
+        "statement": "Claude Code uses a more stylized prompt symbol such as '❯'",
+        "confidence": 0.58
+      }
+    ],
+    "uncertainty_notes": "Moderate confidence."
+  },
+  "parse_success": true
+}

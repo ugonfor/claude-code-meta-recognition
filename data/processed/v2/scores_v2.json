@@ -1,0 +1,1599 @@
+{
+  "P01": {
+    "prompt_type": "free_recall",
+    "domain": "D1",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The startup screen is enclosed in a bordered box using Unicode box-drawing characters",
+            "confidence": 0.5,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The layout inside the box is two-column",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The left side contains an ASCII/Unicode art logo",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The left side contains version information",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The right side contains tips or getting-started information",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "There is an input prompt below the box for user input",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 6,
+        "correct_count": 6,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P02": {
+    "prompt_type": "forced_choice",
+    "domain": "D1",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.4,
+        "calibration_error": 0.6,
+        "answer_given": "B",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P03": {
+    "prompt_type": "true_false",
+    "domain": "D1",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.6,
+        "calibration_error": 0.4,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P04": {
+    "prompt_type": "spatial",
+    "domain": "D1",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "A logo or icon appears at the top of the left column",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The product name 'Claude Code' appears on the left side",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Version information appears on the left side",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Model information may appear on the left side",
+            "confidence": 0.3,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 4,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P05": {
+    "prompt_type": "exact_detail",
+    "domain": "D1",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The logo is relatively small and compact, not a full-width banner",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The logo may use Unicode block or line-drawing characters",
+            "confidence": 0.3,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The logo spans approximately 3-6 lines",
+            "confidence": 0.25,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 3,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P06": {
+    "prompt_type": "true_false",
+    "domain": "D1",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": false,
+        "confidence": 0.55,
+        "calibration_error": 0.55,
+        "answer_given": "False",
+        "correct_answer": "True",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P07": {
+    "prompt_type": "exact_detail",
+    "domain": "D1",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The top border of the startup box contains some text rather than being a plain line",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The text in the top border likely includes the product name 'Claude Code'",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The top border may include version information",
+            "confidence": 0.25,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 3,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P08": {
+    "prompt_type": "free_recall",
+    "domain": "D2",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The prompt symbol is '❯' (U+276F)",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Shift+Enter inserts a newline without submitting",
+            "confidence": 0.6,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The input area expands vertically for multiline input",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The input area is positioned at the bottom of the terminal screen",
+            "confidence": 0.7,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "There is contextual status information near the input area",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The cursor is a standard terminal cursor",
+            "confidence": 0.5,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 6,
+        "correct_count": 6,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P09": {
+    "prompt_type": "forced_choice",
+    "domain": "D2",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.6,
+        "calibration_error": 0.4,
+        "answer_given": "C",
+        "correct_answer": "C",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P10": {
+    "prompt_type": "true_false",
+    "domain": "D2",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.6,
+        "calibration_error": 0.4,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P11": {
+    "prompt_type": "spatial",
+    "domain": "D2",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "There is a status or hint line below the input area",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The hint line may show keyboard shortcut reminders",
+            "confidence": 0.35,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The model name or working directory may appear near the input area",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The area below input may sometimes be blank terminal space",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 1,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P12": {
+    "prompt_type": "exact_detail",
+    "domain": "D2",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "'/' prefix triggers slash commands (e.g., /help, /clear, /exit)",
+            "confidence": 0.7,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "'@' can be used to reference files or context items",
+            "confidence": 0.55,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "'!' prefix can be used to run shell commands from the prompt",
+            "confidence": 0.45,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Typing '/' opens an autocomplete or menu of available commands",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 2,
+        "incorrect_count": 0,
+        "unverifiable_count": 2,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P13": {
+    "prompt_type": "forced_choice",
+    "domain": "D2",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": false,
+        "confidence": 0.55,
+        "calibration_error": 0.55,
+        "answer_given": "A",
+        "correct_answer": "D",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P14": {
+    "prompt_type": "free_recall",
+    "domain": "D3",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "In-progress tools show an animated spinner alongside the tool name",
+            "confidence": 0.75,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "In-progress tools use present-progressive verb forms (e.g., 'Reading...')",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Completed tools shift to past tense (e.g., 'Read file')",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Results appear below the tool call entry after completion",
+            "confidence": 0.6,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The spinner disappears once the tool completes",
+            "confidence": 0.7,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Bash command output (stdout/stderr) is displayed after completion",
+            "confidence": 0.6,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 6,
+        "correct_count": 4,
+        "incorrect_count": 0,
+        "unverifiable_count": 2,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P15": {
+    "prompt_type": "forced_choice",
+    "domain": "D3",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.62,
+        "calibration_error": 0.38,
+        "answer_given": "A",
+        "correct_answer": "A",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P16": {
+    "prompt_type": "true_false",
+    "domain": "D3",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.9,
+        "calibration_error": 0.1,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P17": {
+    "prompt_type": "spatial",
+    "domain": "D3",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The thinking indicator appears above the response text",
+            "confidence": 0.5,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The thinking block is displayed before response content begins",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Extended thinking may be shown in a collapsible or summary block",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The response text appears below the thinking section",
+            "confidence": 0.5,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 4,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P18": {
+    "prompt_type": "exact_detail",
+    "domain": "D3",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "Claude Code renders Markdown-formatted text in the terminal",
+            "confidence": 0.85,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "CommonMark or GFM are plausible candidates for the specification used",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 2,
+        "correct_count": 2,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P19": {
+    "prompt_type": "true_false",
+    "domain": "D3",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": false,
+        "confidence": 0.8,
+        "calibration_error": 0.8,
+        "answer_given": "False",
+        "correct_answer": "True",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P20": {
+    "prompt_type": "free_recall",
+    "domain": "D4",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The permission dialog appears inline in the terminal, not as a popup/modal overlay",
+            "confidence": 0.78,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The dialog displays the tool name and specific parameters",
+            "confidence": 0.72,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Options are navigated using arrow keys or Tab and confirmed with Enter",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Options include variants of 'allow once', 'allow always/for session', and 'deny'",
+            "confidence": 0.6,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Claude's execution is paused until the user responds",
+            "confidence": 0.8,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 5,
+        "correct_count": 5,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P21": {
+    "prompt_type": "forced_choice",
+    "domain": "D4",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.65,
+        "calibration_error": 0.35,
+        "answer_given": "B",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P22": {
+    "prompt_type": "true_false",
+    "domain": "D4",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.75,
+        "calibration_error": 0.25,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P23": {
+    "prompt_type": "spatial",
+    "domain": "D4",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "A header announces the tool Claude wants to use",
+            "confidence": 0.65,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The tool's specific parameters are shown below the header",
+            "confidence": 0.68,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Selectable options appear at the bottom of the prompt",
+            "confidence": 0.6,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "One option is highlighted/selected by default",
+            "confidence": 0.55,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 2,
+        "incorrect_count": 0,
+        "unverifiable_count": 2,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P24": {
+    "prompt_type": "exact_detail",
+    "domain": "D4",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "There is a default mode where dangerous tools require approval",
+            "confidence": 0.72,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "There is a bypass permissions or equivalent flag that bypasses all approvals",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Users can grant session-level approval for a tool from within the dialog",
+            "confidence": 0.58,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "There may be a plan/dry-run mode where actions are described but not executed",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 1,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P25": {
+    "prompt_type": "forced_choice",
+    "domain": "D4",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.6,
+        "calibration_error": 0.4,
+        "answer_given": "B",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P26": {
+    "prompt_type": "free_recall",
+    "domain": "D5",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The status line appears at the bottom of the terminal interface",
+            "confidence": 0.75,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The status line shows the current model name",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The status line shows context window usage information",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The status line shows keyboard shortcut hints",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The status line has a visually distinct background",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 5,
+        "correct_count": 5,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P27": {
+    "prompt_type": "forced_choice",
+    "domain": "D5",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.4,
+        "calibration_error": 0.6,
+        "answer_given": "B",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P28": {
+    "prompt_type": "true_false",
+    "domain": "D5",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.45,
+        "calibration_error": 0.55,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P29": {
+    "prompt_type": "exact_detail",
+    "domain": "D5",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The startup screen has a status area below the input prompt",
+            "confidence": 0.6,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The status area contains text referencing available commands or shortcuts",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 2,
+        "correct_count": 2,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P30": {
+    "prompt_type": "spatial",
+    "domain": "D5",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "The model name or session identifier appears on the left side",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Context window usage appears toward the right side",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Keyboard shortcut hints appear on the right side",
+            "confidence": 0.3,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 3,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P31": {
+    "prompt_type": "free_recall",
+    "domain": "D6",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "/clear clears conversation history",
+            "confidence": 0.85,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/help shows available commands",
+            "confidence": 0.85,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/exit or /quit exits the CLI",
+            "confidence": 0.8,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/model shows or changes the current model",
+            "confidence": 0.72,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/compact compacts conversation history",
+            "confidence": 0.75,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/memory manages memory files",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/fast toggles fast mode",
+            "confidence": 0.7,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/plan enters planning mode with no file edits",
+            "confidence": 0.65,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/init initializes a project with CLAUDE.md",
+            "confidence": 0.7,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "/config views or edits configuration",
+            "confidence": 0.6,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 10,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 7,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P32": {
+    "prompt_type": "forced_choice",
+    "domain": "D6",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.25,
+        "calibration_error": 0.75,
+        "answer_given": "B",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P33": {
+    "prompt_type": "true_false",
+    "domain": "D6",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": false,
+        "confidence": 0.45,
+        "calibration_error": 0.45,
+        "answer_given": "False",
+        "correct_answer": "True",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P34": {
+    "prompt_type": "spatial",
+    "domain": "D6",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "Pressing Escape while generating cancels the current generation",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Pressing Escape when idle clears the current input or has minimal effect",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The two Escape behaviors are distinct depending on generation state",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 3,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P35": {
+    "prompt_type": "exact_detail",
+    "domain": "D6",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "There exists a keyboard shortcut to cycle through permission modes",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The specific shortcut is Ctrl+R",
+            "confidence": 0.12,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 2,
+        "correct_count": 1,
+        "incorrect_count": 0,
+        "unverifiable_count": 1,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P36": {
+    "prompt_type": "forced_choice",
+    "domain": "D6",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": false,
+        "confidence": 0.4,
+        "calibration_error": 0.4,
+        "answer_given": "A",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P37": {
+    "prompt_type": "free_recall",
+    "domain": "D7",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "Claude Code does not have a rich multi-theme system with many named themes",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The interface appearance is primarily driven by the terminal emulator color scheme",
+            "confidence": 0.5,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "There is no dedicated slash command for switching named color themes",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "A light/dark mode distinction may exist",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 1,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P38": {
+    "prompt_type": "forced_choice",
+    "domain": "D7",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.2,
+        "calibration_error": 0.8,
+        "answer_given": "C",
+        "correct_answer": "C",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P39": {
+    "prompt_type": "true_false",
+    "domain": "D7",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.2,
+        "calibration_error": 0.8,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P40": {
+    "prompt_type": "spatial",
+    "domain": "D7",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "There is a dedicated theme picker accessible from the interface",
+            "confidence": 0.25,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Any theme picker would be text-based given the terminal environment",
+            "confidence": 0.65,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The theme picker might be accessible via a slash command or settings menu",
+            "confidence": 0.25,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 3,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P41": {
+    "prompt_type": "exact_detail",
+    "domain": "D7",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "There exists a slash command for changing the color theme",
+            "confidence": 0.3,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "The command might be /theme",
+            "confidence": 0.15,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 2,
+        "correct_count": 2,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P42": {
+    "prompt_type": "free_recall",
+    "domain": "D8",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "Added lines shown with green background and '+' prefix",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Removed lines shown with red background and '-' prefix",
+            "confidence": 0.55,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Diff view accessible via '/diff' command",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "File headers shown with filename in diff view",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 4,
+        "correct_count": 4,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P43": {
+    "prompt_type": "forced_choice",
+    "domain": "D8",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.55,
+        "calibration_error": 0.45,
+        "answer_given": "B",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P44": {
+    "prompt_type": "true_false",
+    "domain": "D8",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.45,
+        "calibration_error": 0.55,
+        "answer_given": "True",
+        "correct_answer": "True",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P45": {
+    "prompt_type": "spatial",
+    "domain": "D8",
+    "cognitive_type": "T4",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "A '/diff' command or viewer exists in Claude Code",
+            "confidence": 0.3,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Navigation between files uses Tab or similar key",
+            "confidence": 0.15,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Navigation within a diff uses arrow keys or vim-style j/k",
+            "confidence": 0.2,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 3,
+        "correct_count": 3,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "spatial"
+      }
+    ]
+  },
+  "P46": {
+    "prompt_type": "exact_detail",
+    "domain": "D8",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "Claude Code has a checkpoint/rewind UI with action options",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Options include a 'rewind/restore' action and a 'cancel/keep' action",
+            "confidence": 0.15,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 2,
+        "correct_count": 2,
+        "incorrect_count": 0,
+        "unverifiable_count": 0,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P47": {
+    "prompt_type": "free_recall",
+    "domain": "D9",
+    "cognitive_type": "T1",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "Rate limit errors display a text message indicating the limit has been hit",
+            "confidence": 0.45,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Claude Code implements automatic retry with backoff on rate limit errors",
+            "confidence": 0.4,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "API errors show an 'Error:' prefixed message with HTTP status code",
+            "confidence": 0.3,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Authentication errors prompt the user to run 'claude login' or check API key",
+            "confidence": 0.35,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Authentication errors halt further processing until resolved",
+            "confidence": 0.4,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 5,
+        "correct_count": 4,
+        "incorrect_count": 0,
+        "unverifiable_count": 1,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "free_recall"
+      }
+    ]
+  },
+  "P48": {
+    "prompt_type": "forced_choice",
+    "domain": "D9",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.25,
+        "calibration_error": 0.75,
+        "answer_given": "B",
+        "correct_answer": "B",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  },
+  "P49": {
+    "prompt_type": "true_false",
+    "domain": "D9",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.55,
+        "calibration_error": 0.45,
+        "answer_given": "True",
+        "correct_answer": "True",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P50": {
+    "prompt_type": "exact_detail",
+    "domain": "D9",
+    "cognitive_type": "T5",
+    "trials": [
+      {
+        "claims": [
+          {
+            "claim": "Claude Code shows a spinner or animated indicator while retrying",
+            "confidence": 0.3,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "A 'Retrying...' or similar text message is displayed during retry",
+            "confidence": 0.25,
+            "verdict": "correct",
+            "reasoning": "heuristic_keyword_matching"
+          },
+          {
+            "claim": "Claude Code uses exponential backoff for retries",
+            "confidence": 0.35,
+            "verdict": "unverifiable",
+            "reasoning": "heuristic_keyword_matching"
+          }
+        ],
+        "total_claims": 3,
+        "correct_count": 1,
+        "incorrect_count": 0,
+        "unverifiable_count": 2,
+        "accuracy": 1.0,
+        "hallucination_rate": 0.0,
+        "trial": 1,
+        "prompt_type": "exact_detail"
+      }
+    ]
+  },
+  "P51": {
+    "prompt_type": "true_false",
+    "domain": "D10",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.95,
+        "calibration_error": 0.05,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P52": {
+    "prompt_type": "true_false",
+    "domain": "D10",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.95,
+        "calibration_error": 0.05,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P53": {
+    "prompt_type": "true_false",
+    "domain": "D10",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.9,
+        "calibration_error": 0.1,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P54": {
+    "prompt_type": "true_false",
+    "domain": "D10",
+    "cognitive_type": "T3",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.95,
+        "calibration_error": 0.05,
+        "answer_given": "False",
+        "correct_answer": "False",
+        "trial": 1,
+        "prompt_type": "true_false"
+      }
+    ]
+  },
+  "P55": {
+    "prompt_type": "forced_choice",
+    "domain": "D10",
+    "cognitive_type": "T2",
+    "trials": [
+      {
+        "correct": true,
+        "confidence": 0.93,
+        "calibration_error": 0.07,
+        "answer_given": "D",
+        "correct_answer": "D",
+        "trial": 1,
+        "prompt_type": "forced_choice"
+      }
+    ]
+  }
+}

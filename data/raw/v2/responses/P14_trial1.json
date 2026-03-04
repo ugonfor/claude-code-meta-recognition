@@ -1,0 +1,41 @@
+{
+  "prompt_id": "P14",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.382447",
+  "raw_text": "{\"prompt_id\": \"P14\", \"answer\": \"While a tool is in progress, Claude Code displays the tool name with a present-progressive label and an animated spinner. After completion, the verb shifts to past tense. Results appear below the tool call entry.\", \"confidence\": 0.45, \"claims\": [{\"statement\": \"In-progress tools show an animated spinner alongside the tool name\", \"confidence\": 0.75}, {\"statement\": \"In-progress tools use present-progressive verb forms (e.g., 'Reading...')\", \"confidence\": 0.65}, {\"statement\": \"Completed tools shift to past tense (e.g., 'Read file')\", \"confidence\": 0.65}, {\"statement\": \"Results appear below the tool call entry after completion\", \"confidence\": 0.6}, {\"statement\": \"The spinner disappears once the tool completes\", \"confidence\": 0.7}, {\"statement\": \"Bash command output (stdout/stderr) is displayed after completion\", \"confidence\": 0.6}], \"uncertainty_notes\": \"Moderate uncertainty about exact visual formatting.\"}",
+  "parsed": {
+    "prompt_id": "P14",
+    "answer": "While a tool is in progress, Claude Code displays the tool name with a present-progressive label and an animated spinner. After completion, the verb shifts to past tense. Results appear below the tool call entry.",
+    "confidence": 0.45,
+    "claims": [
+      {
+        "statement": "In-progress tools show an animated spinner alongside the tool name",
+        "confidence": 0.75
+      },
+      {
+        "statement": "In-progress tools use present-progressive verb forms (e.g., 'Reading...')",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Completed tools shift to past tense (e.g., 'Read file')",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Results appear below the tool call entry after completion",
+        "confidence": 0.6
+      },
+      {
+        "statement": "The spinner disappears once the tool completes",
+        "confidence": 0.7
+      },
+      {
+        "statement": "Bash command output (stdout/stderr) is displayed after completion",
+        "confidence": 0.6
+      }
+    ],
+    "uncertainty_notes": "Moderate uncertainty about exact visual formatting."
+  },
+  "parse_success": true
+}

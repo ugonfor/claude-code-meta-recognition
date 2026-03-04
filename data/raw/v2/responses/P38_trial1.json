@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P38",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.484513",
+  "raw_text": "{\"prompt_id\": \"P38\", \"answer\": \"C\", \"confidence\": 0.2, \"claims\": [{\"statement\": \"Claude Code offers 6 built-in color themes including colorblind and ANSI variants\", \"confidence\": 0.2}], \"uncertainty_notes\": \"Genuinely uncertain; guessing based on reasoning about accessibility variants.\"}",
+  "parsed": {
+    "prompt_id": "P38",
+    "answer": "C",
+    "confidence": 0.2,
+    "claims": [
+      {
+        "statement": "Claude Code offers 6 built-in color themes including colorblind and ANSI variants",
+        "confidence": 0.2
+      }
+    ],
+    "uncertainty_notes": "Genuinely uncertain; guessing based on reasoning about accessibility variants."
+  },
+  "parse_success": true
+}

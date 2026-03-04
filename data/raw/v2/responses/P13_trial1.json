@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P13",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.299431",
+  "raw_text": "{\"prompt_id\": \"P13\", \"answer\": \"A\", \"confidence\": 0.55, \"claims\": [{\"statement\": \"Shift+Enter creates a newline without submitting in Claude Code\", \"confidence\": 0.65}, {\"statement\": \"Backslash then Enter may not work as a newline insertion method\", \"confidence\": 0.4}, {\"statement\": \"Ctrl+J as a newline method is uncertain\", \"confidence\": 0.3}], \"uncertainty_notes\": \"Most confident about Shift+Enter. Chose A rather than D because not confident all three methods work.\"}",
+  "parsed": {
+    "prompt_id": "P13",
+    "answer": "A",
+    "confidence": 0.55,
+    "claims": [
+      {
+        "statement": "Shift+Enter creates a newline without submitting in Claude Code",
+        "confidence": 0.65
+      },
+      {
+        "statement": "Backslash then Enter may not work as a newline insertion method",
+        "confidence": 0.4
+      },
+      {
+        "statement": "Ctrl+J as a newline method is uncertain",
+        "confidence": 0.3
+      }
+    ],
+    "uncertainty_notes": "Most confident about Shift+Enter. Chose A rather than D because not confident all three methods work."
+  },
+  "parse_success": true
+}

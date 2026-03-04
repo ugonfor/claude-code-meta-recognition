@@ -1,0 +1,57 @@
+{
+  "prompt_id": "P31",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.393501",
+  "raw_text": "{\"prompt_id\": \"P31\", \"answer\": \"Slash commands: /clear (clear history), /help (show commands), /exit or /quit (exit), /model (change model), /compact (compact history), /memory (manage memory files), /fast (toggle fast mode), /plan (planning mode), /init (initialize project), /config (edit config), /verbose (toggle verbose), /allowed-tools (configure tools), /reset (reset session), /status (session status), /pr-comments (view PR comments), /review (review code)\", \"confidence\": 0.38, \"claims\": [{\"statement\": \"/clear clears conversation history\", \"confidence\": 0.85}, {\"statement\": \"/help shows available commands\", \"confidence\": 0.85}, {\"statement\": \"/exit or /quit exits the CLI\", \"confidence\": 0.8}, {\"statement\": \"/model shows or changes the current model\", \"confidence\": 0.72}, {\"statement\": \"/compact compacts conversation history\", \"confidence\": 0.75}, {\"statement\": \"/memory manages memory files\", \"confidence\": 0.65}, {\"statement\": \"/fast toggles fast mode\", \"confidence\": 0.7}, {\"statement\": \"/plan enters planning mode with no file edits\", \"confidence\": 0.65}, {\"statement\": \"/init initializes a project with CLAUDE.md\", \"confidence\": 0.7}, {\"statement\": \"/config views or edits configuration\", \"confidence\": 0.6}], \"uncertainty_notes\": \"Moderate confidence in core commands; complete set uncertain.\"}",
+  "parsed": {
+    "prompt_id": "P31",
+    "answer": "Slash commands: /clear (clear history), /help (show commands), /exit or /quit (exit), /model (change model), /compact (compact history), /memory (manage memory files), /fast (toggle fast mode), /plan (planning mode), /init (initialize project), /config (edit config), /verbose (toggle verbose), /allowed-tools (configure tools), /reset (reset session), /status (session status), /pr-comments (view PR comments), /review (review code)",
+    "confidence": 0.38,
+    "claims": [
+      {
+        "statement": "/clear clears conversation history",
+        "confidence": 0.85
+      },
+      {
+        "statement": "/help shows available commands",
+        "confidence": 0.85
+      },
+      {
+        "statement": "/exit or /quit exits the CLI",
+        "confidence": 0.8
+      },
+      {
+        "statement": "/model shows or changes the current model",
+        "confidence": 0.72
+      },
+      {
+        "statement": "/compact compacts conversation history",
+        "confidence": 0.75
+      },
+      {
+        "statement": "/memory manages memory files",
+        "confidence": 0.65
+      },
+      {
+        "statement": "/fast toggles fast mode",
+        "confidence": 0.7
+      },
+      {
+        "statement": "/plan enters planning mode with no file edits",
+        "confidence": 0.65
+      },
+      {
+        "statement": "/init initializes a project with CLAUDE.md",
+        "confidence": 0.7
+      },
+      {
+        "statement": "/config views or edits configuration",
+        "confidence": 0.6
+      }
+    ],
+    "uncertainty_notes": "Moderate confidence in core commands; complete set uncertain."
+  },
+  "parse_success": true
+}
