@@ -619,9 +619,107 @@
 
             <div class="content">
 
-            <!-- Conclusion -->
+            <!-- Section 8: Real Screenshot Comparison -->
             <div class="section" style="border-top: none; padding-top: 0;">
                 <span class="section-number">8</span>
+                <h2>실제 인터페이스와의 비교</h2>
+                <p>
+                    연구 중 디렉터가 <strong>실제 Claude Code 시작 화면 스크린샷</strong>을 제공해주었다.
+                    이를 통해 Claude의 묘사를 실제 인터페이스와 직접 비교할 수 있었다.
+                </p>
+
+                <div class="highlight-box">
+                    <p>
+                        <strong>실제 인터페이스 구조:</strong> 둥근 모서리의 큰 박스(╭╮╰╯) 안에 <strong>2컬럼 레이아웃</strong>으로
+                        구성. 왼쪽에 환영 메시지 + 작은 로고 + 메타데이터, 오른쪽에 팁과 최근 활동.
+                        하단에 ❯ 프롬프트와 "bypass permissions on (shift+tab to cycle)" 상태 표시.
+                    </p>
+                </div>
+
+                <table class="data-table">
+                    <tr>
+                        <th style="width:40%">Claude의 묘사</th>
+                        <th style="width:40%">실제 인터페이스</th>
+                        <th style="width:20%">판정</th>
+                    </tr>
+                    <tr>
+                        <td>터미널 기반 CLI</td>
+                        <td>터미널 기반 CLI</td>
+                        <td><span class="badge badge-green">정확</span></td>
+                    </tr>
+                    <tr>
+                        <td>둥근 모서리 박스 문자 (╭╮╰╯)</td>
+                        <td>╭╮╰╯ 실제 사용</td>
+                        <td><span class="badge badge-green">정확</span></td>
+                    </tr>
+                    <tr>
+                        <td>모델 이름 표시</td>
+                        <td>"Opus 4.6 (1M context)"</td>
+                        <td><span class="badge badge-green">정확</span></td>
+                    </tr>
+                    <tr>
+                        <td>작업 디렉토리 표시</td>
+                        <td>"C:\Users\hyogon.ryu"</td>
+                        <td><span class="badge badge-green">정확</span></td>
+                    </tr>
+                    <tr>
+                        <td>하단 입력 영역</td>
+                        <td>하단에 프롬프트 위치</td>
+                        <td><span class="badge badge-green">정확</span></td>
+                    </tr>
+                    <tr>
+                        <td>Shift+Tab 권한 전환</td>
+                        <td>"shift+tab to cycle" 표시</td>
+                        <td><span class="badge badge-green">정확</span></td>
+                    </tr>
+                    <tr>
+                        <td>버전 정보 표시</td>
+                        <td>"Claude Code v2.1.66"</td>
+                        <td><span class="badge badge-green">정확</span></td>
+                    </tr>
+                    <tr style="background: #fef2f2;">
+                        <td>거대 "CLAUDE CODE" ASCII 배너</td>
+                        <td>작은 추상 로고 (▐▛███▜▌)</td>
+                        <td><span class="badge badge-red">환각</span></td>
+                    </tr>
+                    <tr style="background: #fef2f2;">
+                        <td>단일 컬럼 레이아웃</td>
+                        <td>2컬럼 (좌: 환영, 우: 팁)</td>
+                        <td><span class="badge badge-red">오류</span></td>
+                    </tr>
+                    <tr style="background: #fef2f2;">
+                        <td>프롬프트 문자 "&gt;"</td>
+                        <td>프롬프트 문자 "❯"</td>
+                        <td><span class="badge badge-red">오류</span></td>
+                    </tr>
+                    <tr style="background: #fef2f2;">
+                        <td>비용/토큰 상태바</td>
+                        <td>권한 모드 상태 표시</td>
+                        <td><span class="badge badge-red">오류</span></td>
+                    </tr>
+                    <tr style="background: #fef2f2;">
+                        <td>(미언급)</td>
+                        <td>"Welcome back 유효곤!" 인사</td>
+                        <td><span class="badge badge-red">누락</span></td>
+                    </tr>
+                    <tr style="background: #fef2f2;">
+                        <td>(미언급)</td>
+                        <td>조직 정보 "KRAFTON Inc."</td>
+                        <td><span class="badge badge-red">누락</span></td>
+                    </tr>
+                </table>
+
+                <p>
+                    실제 스크린샷과의 비교에서 <strong>7/13 항목이 정확</strong>(54%)하고,
+                    <strong>4개가 오류</strong>, <strong>2개가 누락</strong>이었다.
+                    핵심 구조(터미널 기반, 박스 드로잉, 하단 입력, 모델/디렉토리 표시)는 정확했지만,
+                    세부 요소(프롬프트 문자, 레이아웃 컬럼 수, 로고 형태)에서 오류를 보였다.
+                </p>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="section">
+                <span class="section-number">9</span>
                 <h2>결론</h2>
                 <p>
                     <strong>Claude는 자신의 배포 인터페이스에 대해 상당한 수준의 지식을 보유하고 있다.</strong>
