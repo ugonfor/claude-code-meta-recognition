@@ -32,7 +32,11 @@ pdfmetrics.registerFont(TTFont('MalgunGothic-Bold', FONT_BOLD_PATH))
 
 
 def load_scores():
-    scores_path = PROCESSED_DIR / "detailed_scores.json"
+    # Use v2 empirical scores if available
+    v2_path = PROCESSED_DIR / "detailed_scores_v2.json"
+    v1_path = PROCESSED_DIR / "detailed_scores.json"
+    scores_path = v2_path if v2_path.exists() else v1_path
+    print(f"Loading scores from: {scores_path.name}")
     with open(scores_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
@@ -273,9 +277,10 @@ def build_report(data):
 
     elements.append(Paragraph(
         "본 연구에서는 7개 범주로 구성된 26개 실험을 통해 Claude Code CLI 인터페이스에 대한 "
-        "Claude의 지식을 체계적으로 평가한다. code.claude.com의 공식 문서를 기준으로 "
-        "Claude의 서술을 비교하며, 정확도(accuracy), 구체성(specificity), "
-        "완전성(completeness), 신뢰도 보정(confidence calibration) 차원에서 응답을 평가한다.",
+        "Claude의 지식을 체계적으로 평가한다. 시스템 프롬프트 분석, CLI 명령어 실행, 실제 "
+        "스크린샷 검증 등 다층적 경험적 기준 진실을 바탕으로 Claude의 서술을 비교하며, "
+        "정확도(accuracy), 구체성(specificity), 완전성(completeness), "
+        "신뢰도 보정(confidence calibration) 차원에서 응답을 평가한다.",
         styles['BodyText']
     ))
 
@@ -362,10 +367,12 @@ def build_report(data):
 
     elements.append(Paragraph("3.3 기준 진실(Ground Truth)", styles['SubsectionTitle']))
     elements.append(Paragraph(
-        "기준 진실은 code.claude.com의 공식 Claude Code 문서에서 확립하였으며, "
-        "구체적으로 Overview, Interactive Mode, CLI Reference 페이지를 참조하였다. "
-        "이 문서는 인터페이스의 기능, 키보드 단축키, 슬래시 명령어, UI 요소, "
-        "인터랙션 패턴에 대한 권위 있는 설명을 제공한다.",
+        "기준 진실은 다층적 경험적 접근으로 확립하였다. 첫째, Claude Code 내부에서 직접 관찰 "
+        "가능한 시스템 프롬프트 분석을 통해 도구 목록, 모델 정보, 환경 설정을 확인하였다. "
+        "둘째, 'claude --help' 및 'claude --version' 명령어를 실행하여 CLI 명령어, 플래그, "
+        "버전 정보(v2.1.66)를 직접 검증하였다. 셋째, 실제 Claude Code 시작 화면의 스크린샷을 "
+        "확보하여 레이아웃, 프롬프트 문자, 로고 형태 등 시각적 요소를 실증적으로 확인하였다. "
+        "이러한 경험적 기준 진실은 문서 기반 접근보다 더 정확하고 세밀한 평가를 가능하게 한다.",
         styles['BodyText']
     ))
 
@@ -644,12 +651,13 @@ def build_report(data):
     elements.append(Paragraph("5.5 한계", styles['SubsectionTitle']))
     elements.append(Paragraph(
         "본 연구에는 여러 한계가 있다. 첫째, 하나의 모델(Claude Opus 4.6)만을 평가하였으며 "
-        "결과는 모델 버전에 따라 다를 수 있다. 둘째, 기준 진실은 픽셀 수준의 인터페이스 비교가 "
-        "아닌 문서에 기반한다. 셋째, 평가는 다른 Claude 인스턴스에 의해 수행되어 자기 평가에서의 "
-        "잠재적 편향이 존재한다. 넷째, 실험은 Claude Code 자체 내에서 수행되어 모델이 Claude Code를 "
-        "언급하는 시스템 프롬프트에 접근할 수 있었다 \u2014 에이전트들이 훈련 지식에 의존하도록 "
-        "지시받았음에도 불구하고. 마지막으로, 인터페이스는 시간이 지남에 따라 진화하므로 "
-        "모델의 훈련 데이터가 현재 버전과 다른 버전을 설명할 수 있다.",
+        "결과는 모델 버전에 따라 다를 수 있다. 둘째, 경험적 기준 진실이 문서 기반보다 개선되었으나, "
+        "여전히 단일 스크린샷(시작 화면)에 의존하며 대화 진행 중의 다양한 화면 상태를 포괄하지 못한다. "
+        "셋째, 평가는 다른 Claude 인스턴스에 의해 수행되어 자기 평가에서의 잠재적 편향이 존재한다. "
+        "넷째, 실험은 Claude Code 자체 내에서 수행되어 모델이 Claude Code를 언급하는 시스템 프롬프트에 "
+        "접근할 수 있었다 \u2014 에이전트들이 훈련 지식에 의존하도록 지시받았음에도 불구하고. "
+        "마지막으로, 인터페이스는 시간이 지남에 따라 진화하므로 모델의 훈련 데이터가 현재 버전과 "
+        "다른 버전을 설명할 수 있다.",
         styles['BodyText']
     ))
 
