@@ -1,0 +1,33 @@
+{
+  "prompt_id": "P11",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.297431",
+  "raw_text": "{\"prompt_id\": \"P11\", \"answer\": \"Directly below the input area there is typically a status/hint line showing keyboard shortcut reminders or contextual information. This may include the current mode or shortcuts. In some states the area may be blank.\", \"confidence\": 0.3, \"claims\": [{\"statement\": \"There is a status or hint line below the input area\", \"confidence\": 0.4}, {\"statement\": \"The hint line may show keyboard shortcut reminders\", \"confidence\": 0.35}, {\"statement\": \"The model name or working directory may appear near the input area\", \"confidence\": 0.35}, {\"statement\": \"The area below input may sometimes be blank terminal space\", \"confidence\": 0.45}], \"uncertainty_notes\": \"Low confidence about exact content.\"}",
+  "parsed": {
+    "prompt_id": "P11",
+    "answer": "Directly below the input area there is typically a status/hint line showing keyboard shortcut reminders or contextual information. This may include the current mode or shortcuts. In some states the area may be blank.",
+    "confidence": 0.3,
+    "claims": [
+      {
+        "statement": "There is a status or hint line below the input area",
+        "confidence": 0.4
+      },
+      {
+        "statement": "The hint line may show keyboard shortcut reminders",
+        "confidence": 0.35
+      },
+      {
+        "statement": "The model name or working directory may appear near the input area",
+        "confidence": 0.35
+      },
+      {
+        "statement": "The area below input may sometimes be blank terminal space",
+        "confidence": 0.45
+      }
+    ],
+    "uncertainty_notes": "Low confidence about exact content."
+  },
+  "parse_success": true
+}

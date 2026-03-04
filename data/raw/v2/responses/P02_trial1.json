@@ -1,0 +1,33 @@
+{
+  "prompt_id": "P02",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:03:06.671538",
+  "raw_text": "{\"prompt_id\": \"P02\", \"answer\": \"B\", \"confidence\": 0.4, \"claims\": [{\"statement\": \"Claude Code uses a two-column layout on the welcome screen\", \"confidence\": 0.4}, {\"statement\": \"The welcome screen is enclosed in a bordered box\", \"confidence\": 0.45}, {\"statement\": \"Welcome info appears on the left side\", \"confidence\": 0.35}, {\"statement\": \"Tips or activity information appears on the right side\", \"confidence\": 0.35}], \"uncertainty_notes\": \"I am not highly confident in this answer.\"}",
+  "parsed": {
+    "prompt_id": "P02",
+    "answer": "B",
+    "confidence": 0.4,
+    "claims": [
+      {
+        "statement": "Claude Code uses a two-column layout on the welcome screen",
+        "confidence": 0.4
+      },
+      {
+        "statement": "The welcome screen is enclosed in a bordered box",
+        "confidence": 0.45
+      },
+      {
+        "statement": "Welcome info appears on the left side",
+        "confidence": 0.35
+      },
+      {
+        "statement": "Tips or activity information appears on the right side",
+        "confidence": 0.35
+      }
+    ],
+    "uncertainty_notes": "I am not highly confident in this answer."
+  },
+  "parse_success": true
+}

@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P29",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.557487",
+  "raw_text": "{\"prompt_id\": \"P29\", \"answer\": \"Cannot reliably reproduce the exact text. There may be text referencing available commands or shortcuts.\", \"confidence\": 0.15, \"claims\": [{\"statement\": \"The startup screen has a status area below the input prompt\", \"confidence\": 0.6}, {\"statement\": \"The status area contains text referencing available commands or shortcuts\", \"confidence\": 0.35}], \"uncertainty_notes\": \"Very low confidence; risk of hallucinating specific text.\"}",
+  "parsed": {
+    "prompt_id": "P29",
+    "answer": "Cannot reliably reproduce the exact text. There may be text referencing available commands or shortcuts.",
+    "confidence": 0.15,
+    "claims": [
+      {
+        "statement": "The startup screen has a status area below the input prompt",
+        "confidence": 0.6
+      },
+      {
+        "statement": "The status area contains text referencing available commands or shortcuts",
+        "confidence": 0.35
+      }
+    ],
+    "uncertainty_notes": "Very low confidence; risk of hallucinating specific text."
+  },
+  "parse_success": true
+}

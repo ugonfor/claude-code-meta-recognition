@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P54",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:03:06.585391",
+  "raw_text": "{\"prompt_id\": \"P54\", \"answer\": \"False\", \"confidence\": 0.95, \"claims\": [{\"statement\": \"Claude Code does not have a graphical file tree panel\", \"confidence\": 0.95}, {\"statement\": \"Claude Code does not display project structure alongside the conversation in a GUI panel\", \"confidence\": 0.95}, {\"statement\": \"Claude Code is a keyboard-driven terminal application without graphical panels\", \"confidence\": 0.95}], \"uncertainty_notes\": \"Very confident this is false.\"}",
+  "parsed": {
+    "prompt_id": "P54",
+    "answer": "False",
+    "confidence": 0.95,
+    "claims": [
+      {
+        "statement": "Claude Code does not have a graphical file tree panel",
+        "confidence": 0.95
+      },
+      {
+        "statement": "Claude Code does not display project structure alongside the conversation in a GUI panel",
+        "confidence": 0.95
+      },
+      {
+        "statement": "Claude Code is a keyboard-driven terminal application without graphical panels",
+        "confidence": 0.95
+      }
+    ],
+    "uncertainty_notes": "Very confident this is false."
+  },
+  "parse_success": true
+}

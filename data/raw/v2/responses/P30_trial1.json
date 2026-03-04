@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P30",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.558487",
+  "raw_text": "{\"prompt_id\": \"P30\", \"answer\": \"Model name or session identifier on the left, context window usage in the middle or right, keyboard shortcut hints on the right side.\", \"confidence\": 0.25, \"claims\": [{\"statement\": \"The model name or session identifier appears on the left side\", \"confidence\": 0.4}, {\"statement\": \"Context window usage appears toward the right side\", \"confidence\": 0.35}, {\"statement\": \"Keyboard shortcut hints appear on the right side\", \"confidence\": 0.3}], \"uncertainty_notes\": \"High risk of inaccuracy; providing best-guess.\"}",
+  "parsed": {
+    "prompt_id": "P30",
+    "answer": "Model name or session identifier on the left, context window usage in the middle or right, keyboard shortcut hints on the right side.",
+    "confidence": 0.25,
+    "claims": [
+      {
+        "statement": "The model name or session identifier appears on the left side",
+        "confidence": 0.4
+      },
+      {
+        "statement": "Context window usage appears toward the right side",
+        "confidence": 0.35
+      },
+      {
+        "statement": "Keyboard shortcut hints appear on the right side",
+        "confidence": 0.3
+      }
+    ],
+    "uncertainty_notes": "High risk of inaccuracy; providing best-guess."
+  },
+  "parse_success": true
+}

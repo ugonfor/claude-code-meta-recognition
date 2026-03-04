@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P52",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:03:06.583398",
+  "raw_text": "{\"prompt_id\": \"P52\", \"answer\": \"False\", \"confidence\": 0.95, \"claims\": [{\"statement\": \"Claude Code does not display avatar icons next to messages\", \"confidence\": 0.95}, {\"statement\": \"Claude Code does not display profile pictures next to messages\", \"confidence\": 0.95}, {\"statement\": \"Claude Code is a plain terminal application without graphical avatar elements\", \"confidence\": 0.93}], \"uncertainty_notes\": \"Highly confident this is false.\"}",
+  "parsed": {
+    "prompt_id": "P52",
+    "answer": "False",
+    "confidence": 0.95,
+    "claims": [
+      {
+        "statement": "Claude Code does not display avatar icons next to messages",
+        "confidence": 0.95
+      },
+      {
+        "statement": "Claude Code does not display profile pictures next to messages",
+        "confidence": 0.95
+      },
+      {
+        "statement": "Claude Code is a plain terminal application without graphical avatar elements",
+        "confidence": 0.93
+      }
+    ],
+    "uncertainty_notes": "Highly confident this is false."
+  },
+  "parse_success": true
+}

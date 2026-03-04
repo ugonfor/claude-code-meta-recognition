@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P21",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.469961",
+  "raw_text": "{\"prompt_id\": \"P21\", \"answer\": \"B\", \"confidence\": 0.65, \"claims\": [{\"statement\": \"Users navigate between permission dialog options using Tab or arrow keys\", \"confidence\": 0.65}], \"uncertainty_notes\": \"Believe navigation uses arrow keys/Tab rather than typed characters.\"}",
+  "parsed": {
+    "prompt_id": "P21",
+    "answer": "B",
+    "confidence": 0.65,
+    "claims": [
+      {
+        "statement": "Users navigate between permission dialog options using Tab or arrow keys",
+        "confidence": 0.65
+      }
+    ],
+    "uncertainty_notes": "Believe navigation uses arrow keys/Tab rather than typed characters."
+  },
+  "parse_success": true
+}

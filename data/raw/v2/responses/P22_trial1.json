@@ -1,0 +1,21 @@
+{
+  "prompt_id": "P22",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.470960",
+  "raw_text": "{\"prompt_id\": \"P22\", \"answer\": \"False\", \"confidence\": 0.75, \"claims\": [{\"statement\": \"Claude Code permission dialogs do NOT appear as popup/modal windows; they are rendered inline within the terminal stream\", \"confidence\": 0.75}], \"uncertainty_notes\": \"Terminal-based CLI architecture doesn't support true GUI modals.\"}",
+  "parsed": {
+    "prompt_id": "P22",
+    "answer": "False",
+    "confidence": 0.75,
+    "claims": [
+      {
+        "statement": "Claude Code permission dialogs do NOT appear as popup/modal windows; they are rendered inline within the terminal stream",
+        "confidence": 0.75
+      }
+    ],
+    "uncertainty_notes": "Terminal-based CLI architecture doesn't support true GUI modals."
+  },
+  "parse_success": true
+}

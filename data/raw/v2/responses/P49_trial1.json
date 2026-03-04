@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P49",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.664056",
+  "raw_text": "{\"prompt_id\": \"P49\", \"answer\": \"True\", \"confidence\": 0.55, \"claims\": [{\"statement\": \"Claude Code automatically compresses conversation history when approaching context limit\", \"confidence\": 0.55}, {\"statement\": \"The compression allows the conversation to continue rather than halting\", \"confidence\": 0.5}], \"uncertainty_notes\": \"Moderate confidence in automatic context management.\"}",
+  "parsed": {
+    "prompt_id": "P49",
+    "answer": "True",
+    "confidence": 0.55,
+    "claims": [
+      {
+        "statement": "Claude Code automatically compresses conversation history when approaching context limit",
+        "confidence": 0.55
+      },
+      {
+        "statement": "The compression allows the conversation to continue rather than halting",
+        "confidence": 0.5
+      }
+    ],
+    "uncertainty_notes": "Moderate confidence in automatic context management."
+  },
+  "parse_success": true
+}

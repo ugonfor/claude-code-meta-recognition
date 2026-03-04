@@ -1,0 +1,37 @@
+{
+  "prompt_id": "P26",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.555487",
+  "raw_text": "{\"prompt_id\": \"P26\", \"answer\": \"The status line is at the bottom of the terminal. It shows model name, context window usage, keyboard shortcut hints. Has a visually distinct background.\", \"confidence\": 0.35, \"claims\": [{\"statement\": \"The status line appears at the bottom of the terminal interface\", \"confidence\": 0.75}, {\"statement\": \"The status line shows the current model name\", \"confidence\": 0.55}, {\"statement\": \"The status line shows context window usage information\", \"confidence\": 0.55}, {\"statement\": \"The status line shows keyboard shortcut hints\", \"confidence\": 0.45}, {\"statement\": \"The status line has a visually distinct background\", \"confidence\": 0.4}], \"uncertainty_notes\": \"Limited reliable knowledge of exact contents.\"}",
+  "parsed": {
+    "prompt_id": "P26",
+    "answer": "The status line is at the bottom of the terminal. It shows model name, context window usage, keyboard shortcut hints. Has a visually distinct background.",
+    "confidence": 0.35,
+    "claims": [
+      {
+        "statement": "The status line appears at the bottom of the terminal interface",
+        "confidence": 0.75
+      },
+      {
+        "statement": "The status line shows the current model name",
+        "confidence": 0.55
+      },
+      {
+        "statement": "The status line shows context window usage information",
+        "confidence": 0.55
+      },
+      {
+        "statement": "The status line shows keyboard shortcut hints",
+        "confidence": 0.45
+      },
+      {
+        "statement": "The status line has a visually distinct background",
+        "confidence": 0.4
+      }
+    ],
+    "uncertainty_notes": "Limited reliable knowledge of exact contents."
+  },
+  "parse_success": true
+}

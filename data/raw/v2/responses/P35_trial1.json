@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P35",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.396493",
+  "raw_text": "{\"prompt_id\": \"P35\", \"answer\": \"I believe it may be Ctrl+R but I am not confident. There exists a shortcut to cycle permission modes.\", \"confidence\": 0.15, \"claims\": [{\"statement\": \"There exists a keyboard shortcut to cycle through permission modes\", \"confidence\": 0.55}, {\"statement\": \"The specific shortcut is Ctrl+R\", \"confidence\": 0.12}], \"uncertainty_notes\": \"Very low confidence in exact key combination.\"}",
+  "parsed": {
+    "prompt_id": "P35",
+    "answer": "I believe it may be Ctrl+R but I am not confident. There exists a shortcut to cycle permission modes.",
+    "confidence": 0.15,
+    "claims": [
+      {
+        "statement": "There exists a keyboard shortcut to cycle through permission modes",
+        "confidence": 0.55
+      },
+      {
+        "statement": "The specific shortcut is Ctrl+R",
+        "confidence": 0.12
+      }
+    ],
+    "uncertainty_notes": "Very low confidence in exact key combination."
+  },
+  "parse_success": true
+}

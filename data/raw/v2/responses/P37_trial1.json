@@ -1,0 +1,33 @@
+{
+  "prompt_id": "P37",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.484513",
+  "raw_text": "{\"prompt_id\": \"P37\", \"answer\": \"Claude Code does not have a rich set of named color themes. The interface inherits terminal colors. There may be a light/dark mode toggle.\", \"confidence\": 0.25, \"claims\": [{\"statement\": \"Claude Code does not have a rich multi-theme system with many named themes\", \"confidence\": 0.55}, {\"statement\": \"The interface appearance is primarily driven by the terminal emulator color scheme\", \"confidence\": 0.5}, {\"statement\": \"There is no dedicated slash command for switching named color themes\", \"confidence\": 0.4}, {\"statement\": \"A light/dark mode distinction may exist\", \"confidence\": 0.35}], \"uncertainty_notes\": \"No reliable specific knowledge of theme system.\"}",
+  "parsed": {
+    "prompt_id": "P37",
+    "answer": "Claude Code does not have a rich set of named color themes. The interface inherits terminal colors. There may be a light/dark mode toggle.",
+    "confidence": 0.25,
+    "claims": [
+      {
+        "statement": "Claude Code does not have a rich multi-theme system with many named themes",
+        "confidence": 0.55
+      },
+      {
+        "statement": "The interface appearance is primarily driven by the terminal emulator color scheme",
+        "confidence": 0.5
+      },
+      {
+        "statement": "There is no dedicated slash command for switching named color themes",
+        "confidence": 0.4
+      },
+      {
+        "statement": "A light/dark mode distinction may exist",
+        "confidence": 0.35
+      }
+    ],
+    "uncertainty_notes": "No reliable specific knowledge of theme system."
+  },
+  "parse_success": true
+}

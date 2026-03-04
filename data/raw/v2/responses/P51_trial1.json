@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P51",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:03:06.582392",
+  "raw_text": "{\"prompt_id\": \"P51\", \"answer\": \"False\", \"confidence\": 0.95, \"claims\": [{\"statement\": \"Claude Code is a terminal-based CLI application, not a web interface\", \"confidence\": 0.98}, {\"statement\": \"Claude Code does not have a sidebar panel\", \"confidence\": 0.95}, {\"statement\": \"Claude Code does not display a history of previous conversations in a sidebar like ChatGPT\", \"confidence\": 0.95}], \"uncertainty_notes\": \"Very confident this is false. Claude Code runs in a terminal and has no GUI sidebar elements.\"}",
+  "parsed": {
+    "prompt_id": "P51",
+    "answer": "False",
+    "confidence": 0.95,
+    "claims": [
+      {
+        "statement": "Claude Code is a terminal-based CLI application, not a web interface",
+        "confidence": 0.98
+      },
+      {
+        "statement": "Claude Code does not have a sidebar panel",
+        "confidence": 0.95
+      },
+      {
+        "statement": "Claude Code does not display a history of previous conversations in a sidebar like ChatGPT",
+        "confidence": 0.95
+      }
+    ],
+    "uncertainty_notes": "Very confident this is false. Claude Code runs in a terminal and has no GUI sidebar elements."
+  },
+  "parse_success": true
+}

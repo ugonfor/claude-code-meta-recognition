@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P50",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.665055",
+  "raw_text": "{\"prompt_id\": \"P50\", \"answer\": \"Shows a spinner or animated indicator while retrying. May display 'Retrying...' text with attempt count. Uses exponential backoff.\", \"confidence\": 0.2, \"claims\": [{\"statement\": \"Claude Code shows a spinner or animated indicator while retrying\", \"confidence\": 0.3}, {\"statement\": \"A 'Retrying...' or similar text message is displayed during retry\", \"confidence\": 0.25}, {\"statement\": \"Claude Code uses exponential backoff for retries\", \"confidence\": 0.35}], \"uncertainty_notes\": \"Very low confidence; inferences from general CLI conventions.\"}",
+  "parsed": {
+    "prompt_id": "P50",
+    "answer": "Shows a spinner or animated indicator while retrying. May display 'Retrying...' text with attempt count. Uses exponential backoff.",
+    "confidence": 0.2,
+    "claims": [
+      {
+        "statement": "Claude Code shows a spinner or animated indicator while retrying",
+        "confidence": 0.3
+      },
+      {
+        "statement": "A 'Retrying...' or similar text message is displayed during retry",
+        "confidence": 0.25
+      },
+      {
+        "statement": "Claude Code uses exponential backoff for retries",
+        "confidence": 0.35
+      }
+    ],
+    "uncertainty_notes": "Very low confidence; inferences from general CLI conventions."
+  },
+  "parse_success": true
+}

@@ -1,0 +1,29 @@
+{
+  "prompt_id": "P44",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.573031",
+  "raw_text": "{\"prompt_id\": \"P44\", \"answer\": \"True\", \"confidence\": 0.45, \"claims\": [{\"statement\": \"Claude Code creates automatic checkpoints at each user prompt\", \"confidence\": 0.45}, {\"statement\": \"Users can rewind file state to any previous checkpoint\", \"confidence\": 0.4}, {\"statement\": \"The feature is designed as a safety/undo mechanism\", \"confidence\": 0.45}], \"uncertainty_notes\": \"Seen references to checkpoint/undo; not confident about exact granularity.\"}",
+  "parsed": {
+    "prompt_id": "P44",
+    "answer": "True",
+    "confidence": 0.45,
+    "claims": [
+      {
+        "statement": "Claude Code creates automatic checkpoints at each user prompt",
+        "confidence": 0.45
+      },
+      {
+        "statement": "Users can rewind file state to any previous checkpoint",
+        "confidence": 0.4
+      },
+      {
+        "statement": "The feature is designed as a safety/undo mechanism",
+        "confidence": 0.45
+      }
+    ],
+    "uncertainty_notes": "Seen references to checkpoint/undo; not confident about exact granularity."
+  },
+  "parse_success": true
+}

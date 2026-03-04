@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P18",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.384951",
+  "raw_text": "{\"prompt_id\": \"P18\", \"answer\": \"CommonMark or GFM would be the most likely candidates, but I cannot confirm the exact specification name.\", \"confidence\": 0.2, \"claims\": [{\"statement\": \"Claude Code renders Markdown-formatted text in the terminal\", \"confidence\": 0.85}, {\"statement\": \"CommonMark or GFM are plausible candidates for the specification used\", \"confidence\": 0.35}], \"uncertainty_notes\": \"Very low confidence; highly specific implementation detail.\"}",
+  "parsed": {
+    "prompt_id": "P18",
+    "answer": "CommonMark or GFM would be the most likely candidates, but I cannot confirm the exact specification name.",
+    "confidence": 0.2,
+    "claims": [
+      {
+        "statement": "Claude Code renders Markdown-formatted text in the terminal",
+        "confidence": 0.85
+      },
+      {
+        "statement": "CommonMark or GFM are plausible candidates for the specification used",
+        "confidence": 0.35
+      }
+    ],
+    "uncertainty_notes": "Very low confidence; highly specific implementation detail."
+  },
+  "parse_success": true
+}

@@ -1,0 +1,25 @@
+{
+  "prompt_id": "P39",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:07:18.485513",
+  "raw_text": "{\"prompt_id\": \"P39\", \"answer\": \"False\", \"confidence\": 0.2, \"claims\": [{\"statement\": \"There is a native (compiled) build and an npm-installed version of Claude Code\", \"confidence\": 0.6}, {\"statement\": \"Syntax highlighting behavior may differ between the two builds\", \"confidence\": 0.25}], \"uncertainty_notes\": \"Lack sufficient knowledge about build variant differences.\"}",
+  "parsed": {
+    "prompt_id": "P39",
+    "answer": "False",
+    "confidence": 0.2,
+    "claims": [
+      {
+        "statement": "There is a native (compiled) build and an npm-installed version of Claude Code",
+        "confidence": 0.6
+      },
+      {
+        "statement": "Syntax highlighting behavior may differ between the two builds",
+        "confidence": 0.25
+      }
+    ],
+    "uncertainty_notes": "Lack sufficient knowledge about build variant differences."
+  },
+  "parse_success": true
+}

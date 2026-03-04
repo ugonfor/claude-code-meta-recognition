@@ -1,0 +1,33 @@
+{
+  "prompt_id": "P12",
+  "trial": 1,
+  "backend": "subagent",
+  "model": "claude-sonnet-4-20250514",
+  "timestamp": "2026-03-04T20:05:25.298424",
+  "raw_text": "{\"prompt_id\": \"P12\", \"answer\": \"'/' prefix triggers slash commands, '@' references files or context items, '!' runs shell commands directly.\", \"confidence\": 0.45, \"claims\": [{\"statement\": \"'/' prefix triggers slash commands (e.g., /help, /clear, /exit)\", \"confidence\": 0.7}, {\"statement\": \"'@' can be used to reference files or context items\", \"confidence\": 0.55}, {\"statement\": \"'!' prefix can be used to run shell commands from the prompt\", \"confidence\": 0.45}, {\"statement\": \"Typing '/' opens an autocomplete or menu of available commands\", \"confidence\": 0.55}], \"uncertainty_notes\": \"'/' most certain; '@' and '!' plausible but less certain.\"}",
+  "parsed": {
+    "prompt_id": "P12",
+    "answer": "'/' prefix triggers slash commands, '@' references files or context items, '!' runs shell commands directly.",
+    "confidence": 0.45,
+    "claims": [
+      {
+        "statement": "'/' prefix triggers slash commands (e.g., /help, /clear, /exit)",
+        "confidence": 0.7
+      },
+      {
+        "statement": "'@' can be used to reference files or context items",
+        "confidence": 0.55
+      },
+      {
+        "statement": "'!' prefix can be used to run shell commands from the prompt",
+        "confidence": 0.45
+      },
+      {
+        "statement": "Typing '/' opens an autocomplete or menu of available commands",
+        "confidence": 0.55
+      }
+    ],
+    "uncertainty_notes": "'/' most certain; '@' and '!' plausible but less certain."
+  },
+  "parse_success": true
+}
