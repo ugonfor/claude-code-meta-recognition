@@ -1,7 +1,7 @@
 {
-  "version": "2.0",
-  "collected_date": "2026-03-04",
-  "claude_code_version": "2.1.66",
+  "version": "2.1",
+  "collected_date": "2026-03-09",
+  "claude_code_version": "2.1.70",
   "sources": {
     "screenshot_startup": {
       "path": "data/screenshots/startup.png",
@@ -27,6 +27,11 @@
     "empirical_session": {
       "description": "Direct observation during live Claude Code session",
       "status": "empirically_verified"
+    },
+    "extracted_api_payload": {
+      "path": "data/ground_truth/extracted_api_payload.json",
+      "description": "Actual API request payload extracted from Claude Code v2.1.70, showing system prompt, tool definitions, model config, and message structure",
+      "status": "definitive"
     }
   },
 
@@ -622,6 +627,102 @@
       "value": true,
       "source": "official_docs",
       "confidence": "documented"
+    },
+    {
+      "id": "GT075",
+      "domain": "D3",
+      "statement": "The system prompt identity line is: 'You are Claude Code, Anthropic's official CLI for Claude.'",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT076",
+      "domain": "D3",
+      "statement": "Tools are loaded on-demand via a ToolSearch deferred loading mechanism; only ToolSearch is available initially, all other tools (Bash, Read, Edit, Glob, Grep, Write, etc.) must be discovered first",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT077",
+      "domain": "D3",
+      "statement": "The API payload uses max_tokens=32000, thinking type='adaptive', and stream=true",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT078",
+      "domain": "D3",
+      "statement": "The system prompt is sent as multiple blocks: a billing header (x-anthropic-billing-header with cc_version, cc_entrypoint, cch), an identity block, and a main instruction block, each with cache_control ephemeral",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT079",
+      "domain": "D6",
+      "statement": "Available skills are injected as <system-reminder> tags in user messages, not in system messages. Skills include: keybindings-help, simplify, claude-api, commit-commands:commit-push-pr, commit-commands:commit, commit-commands:clean_gone",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT080",
+      "domain": "D3",
+      "statement": "The output_config has effort='medium' by default",
+      "value": "medium",
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT081",
+      "domain": "D1",
+      "statement": "The billing header reveals the version format: cc_version=X.Y.Z.hash (e.g., 2.1.70.f29), entrypoint=cli",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT082",
+      "domain": "D3",
+      "statement": "The user's actual message is sent in a multi-content user message alongside system-reminder blocks, with cache_control ephemeral on the user text",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT083",
+      "domain": "D3",
+      "statement": "The model field in the API call is 'claude-opus-4-6' (not a versioned model ID with date suffix)",
+      "value": "claude-opus-4-6",
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT084",
+      "domain": "D6",
+      "statement": "Available deferred tools listed in the first user message: Agent, AskUserQuestion, Bash, Edit, EnterPlanMode, EnterWorktree, ExitPlanMode, Glob, Grep, NotebookEdit, Read, Skill, TaskCreate, TaskGet, TaskList, TaskOutput, TaskStop, TaskUpdate, WebFetch, WebSearch, Write",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT085",
+      "domain": "D3",
+      "statement": "The system prompt explicitly states: 'Github-flavored markdown for formatting, rendered in a monospace font using the CommonMark specification'",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
+    },
+    {
+      "id": "GT086",
+      "domain": "D3",
+      "statement": "The system prompt includes auto memory instructions with a persistent memory directory path at ~/.claude/projects/{project-hash}/memory/",
+      "value": true,
+      "source": "extracted_api_payload",
+      "confidence": "definitive"
     }
   ],
 
