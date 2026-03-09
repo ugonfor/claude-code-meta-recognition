@@ -81,6 +81,7 @@ Specifically, we test Claude (Sonnet 4.6) on its knowledge of the Claude Code CL
 We design 55 prompts spanning 10 mutually exclusive domains and 5 cognitive demand types (free recall, forced choice, true/false, spatial reasoning, exact detail).
 Our structured evaluation reveals \textbf{82.1\% objective accuracy} on 28 forced-choice and true/false items, with an average confidence of 0.588 and calibration error of 0.430.
 The model achieves perfect accuracy on negative knowledge probes (correctly identifying non-existent features) but struggles with navigation shortcuts (33\%) and recently-added features like Vim mode and output styles.
+We further obtain the actual API payload sent by Claude Code, providing definitive ground truth about what information the harness transmits to the model.
 These results suggest LLMs have structured but incomplete meta-knowledge of their deployment environment, with systematic blind spots in visual-only and feature-specific details.
 
 \vspace{4pt}
@@ -105,7 +106,7 @@ This extends prior work on LLM self-knowledge by focusing specifically on \texti
 Our key contributions are:
 \begin{enumerate}
   \item A structured evaluation framework with MECE domain taxonomy and mixed prompt types including negative knowledge controls;
-  \item A ground truth database of 74 verified facts about Claude Code built from screenshots, documentation, and empirical session observation;
+  \item A ground truth database of 86 verified facts about Claude Code built from screenshots, documentation, empirical observation, and the extracted API payload;
   \item Empirical results showing 82.1\% objective accuracy with systematic blind spots in navigation and recently-added features;
   \item Analysis of confidence calibration revealing appropriate uncertainty in knowledge gaps.
 \end{enumerate}
@@ -182,13 +183,15 @@ Prompts include:
 All prompts enforce structured JSON output with per-claim confidence scores.
 
 \subsection{Ground Truth}
-We compile a ground truth database of 74 verified facts from three sources:
+We compile a ground truth database of 86 verified facts from four sources:
 \begin{enumerate}
   \item \textbf{Screenshot analysis} of an actual Claude Code v2.1.66 startup screen, confirming the two-column layout, U+276F prompt character, and small abstract logo;
   \item \textbf{Official documentation} at \texttt{code.claude.com} covering 25 UI categories;
-  \item \textbf{Empirical session observation} including system prompt inspection and CLI help output.
+  \item \textbf{Empirical session observation} including system prompt inspection and CLI help output;
+  \item \textbf{Extracted API payload} from Claude Code v2.1.70---the actual JSON request sent to the Anthropic API, revealing the system prompt structure, tool loading mechanism, model configuration, and message format (see Section~\ref{sec:api_payload}).
 \end{enumerate}
 Each fact is tagged with source, domain, and confidence level (definitive / documented / empirical).
+The extracted API payload provides the highest-confidence ground truth, as it shows the exact data Claude receives.
 
 \subsection{Evaluation Protocol}
 We evaluate Claude Sonnet 4.6 using subagent instances with explicit instructions to answer from training knowledge only (no tool use).
@@ -299,6 +302,45 @@ The P19 failure (0.80 confidence, wrong) reveals that calibration can break down
 \textbf{For deployment:} Models may confidently describe their interface incorrectly, particularly for features added after the training cutoff.
 \textbf{For trust:} The 82\% accuracy means roughly 1 in 5 interface-related claims may be wrong.
 \textbf{For development:} Including deployment interface documentation in training data could improve self-knowledge.
+
+% ══════════════════════════════════════════════════════════════
+\section{Extracted API Payload Analysis}
+\label{sec:api_payload}
+
+After the initial experiment, we obtained the actual JSON API request payload that Claude Code v2.1.70 sends to the Anthropic API.
+This provides \textit{definitive} ground truth about the harness architecture---not what the model knows, but what it \textit{actually receives}.
+
+\subsection{System Prompt Architecture}
+The system prompt is sent as multiple blocks within a \texttt{system} array:
+\begin{enumerate}
+  \item A \textbf{billing header}: \texttt{x-anthropic-billing-header} containing version (\texttt{cc\_version=2.1.70.f29}), entrypoint (\texttt{cli}), and a hash;
+  \item An \textbf{identity block}: ``You are Claude Code, Anthropic's official CLI for Claude.'';
+  \item A \textbf{main instruction block} (${\sim}$5,000 words) covering tool usage, coding guidelines, tone, memory, and environment details.
+\end{enumerate}
+Each block carries \texttt{cache\_control: \{type: ``ephemeral''\}} for prompt caching optimization.
+
+\subsection{Deferred Tool Loading}
+A key architectural discovery: only \textbf{one tool} (\texttt{ToolSearch}) is provided in the initial API call.
+All other tools---Bash, Read, Edit, Glob, Grep, Write, Agent, and 14 others---are listed as \textit{available deferred tools} in the first user message.
+The model must call \texttt{ToolSearch} to load them before use.
+This explains why tools appear dynamically during a session.
+
+\subsection{Message Structure}
+User messages combine actual user text with system-injected content:
+\begin{itemize}
+  \item A \texttt{<available-deferred-tools>} block listing 21 loadable tools;
+  \item \texttt{<system-reminder>} blocks injecting skill lists and the current date;
+  \item The user's actual text, with \texttt{cache\_control: ephemeral}.
+\end{itemize}
+
+\subsection{Model Configuration}
+The API call specifies: \texttt{model: ``claude-opus-4-6''}, \texttt{max\_tokens: 32000}, \texttt{thinking: \{type: ``adaptive''\}}, \texttt{output\_config: \{effort: ``medium''\}}, \texttt{stream: true}.
+Notably, the model ID uses the non-dated form, and ``adaptive'' thinking means the model decides whether to use extended thinking per turn.
+
+\subsection{Implications for Our Results}
+This payload reveals that Claude's system prompt \textit{does contain} significant harness information (tool names, platform, model ID, CommonMark spec, memory paths).
+However, it does \textbf{not} contain visual details like the startup layout, prompt character, color themes, or keyboard shortcuts.
+This validates our domain taxonomy: domains where the system prompt provides information (D3 Output, D4 Permissions) show higher accuracy, while visual-only domains (D1 Startup, D6 Navigation) show lower accuracy.
 
 % ══════════════════════════════════════════════════════════════
 \section{Limitations}
