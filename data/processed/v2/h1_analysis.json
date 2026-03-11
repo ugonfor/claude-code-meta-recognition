@@ -1,0 +1,531 @@
+{
+  "classification": {
+    "P01": {
+      "sp": "SP-",
+      "reason": "Startup visual layout not described in system prompt"
+    },
+    "P02": {
+      "sp": "SP-",
+      "reason": "Two-column layout is visual-only"
+    },
+    "P03": {
+      "sp": "SP-",
+      "reason": "Logo appearance is visual-only"
+    },
+    "P04": {
+      "sp": "SP-",
+      "reason": "Spatial layout not in system prompt"
+    },
+    "P05": {
+      "sp": "SP-",
+      "reason": "Logo characters are visual-only"
+    },
+    "P06": {
+      "sp": "SP-",
+      "reason": "Personalized greeting not mentioned"
+    },
+    "P07": {
+      "sp": "SP-",
+      "reason": "Border text format not described"
+    },
+    "P08": {
+      "sp": "SP-",
+      "reason": "Prompt character and cursor not described"
+    },
+    "P09": {
+      "sp": "SP-",
+      "reason": "Prompt character (❯) not specified in SP"
+    },
+    "P10": {
+      "sp": "SP-",
+      "reason": "Prompt character not specified in SP"
+    },
+    "P11": {
+      "sp": "SP-",
+      "reason": "Below-input layout not described"
+    },
+    "P12": {
+      "sp": "SP-",
+      "reason": "Only / prefix mentioned; ! and @ not in SP"
+    },
+    "P13": {
+      "sp": "SP-",
+      "reason": "Multiline input methods not described"
+    },
+    "P14": {
+      "sp": "SP-",
+      "reason": "Tool execution display format not fully described"
+    },
+    "P15": {
+      "sp": "SP-",
+      "reason": "Verb tenses for tool display not specified"
+    },
+    "P16": {
+      "sp": "SP+",
+      "reason": "SP says 'markdown' and 'CommonMark', not HTML/CSS"
+    },
+    "P17": {
+      "sp": "SP-",
+      "reason": "Thinking indicator spatial arrangement not described"
+    },
+    "P18": {
+      "sp": "SP+",
+      "reason": "SP explicitly says 'CommonMark specification'"
+    },
+    "P19": {
+      "sp": "SP-",
+      "reason": "Output styles not mentioned in SP"
+    },
+    "P20": {
+      "sp": "SP-",
+      "reason": "Visual appearance of dialogs not described"
+    },
+    "P21": {
+      "sp": "SP-",
+      "reason": "Navigation method (Tab/arrows) not described"
+    },
+    "P22": {
+      "sp": "SP-",
+      "reason": "Inline vs popup not explicitly stated"
+    },
+    "P23": {
+      "sp": "SP-",
+      "reason": "Vertical layout of dialog not described"
+    },
+    "P24": {
+      "sp": "SP-",
+      "reason": "Specific mode names not listed in SP"
+    },
+    "P25": {
+      "sp": "SP-",
+      "reason": "Which tools need approval not explicitly stated"
+    },
+    "P26": {
+      "sp": "SP-",
+      "reason": "Status line appearance not described"
+    },
+    "P27": {
+      "sp": "SP-",
+      "reason": "Context usage indicator not described"
+    },
+    "P28": {
+      "sp": "SP-",
+      "reason": "Startup status display not described"
+    },
+    "P29": {
+      "sp": "SP-",
+      "reason": "Exact startup status text not in SP"
+    },
+    "P30": {
+      "sp": "SP-",
+      "reason": "Spatial arrangement of status elements not described"
+    },
+    "P31": {
+      "sp": "SP-",
+      "reason": "Only /help and /<skill> pattern in SP; full list requires external knowledge"
+    },
+    "P32": {
+      "sp": "SP-",
+      "reason": "Ctrl+T shortcut not mentioned in SP"
+    },
+    "P33": {
+      "sp": "SP-",
+      "reason": "Vim mode not mentioned in SP"
+    },
+    "P34": {
+      "sp": "SP-",
+      "reason": "Escape behavior not described in SP"
+    },
+    "P35": {
+      "sp": "SP-",
+      "reason": "Shift+Tab not mentioned in SP"
+    },
+    "P36": {
+      "sp": "SP-",
+      "reason": "Ctrl+G not mentioned in SP"
+    },
+    "P37": {
+      "sp": "SP-",
+      "reason": "Themes not described in SP"
+    },
+    "P38": {
+      "sp": "SP-",
+      "reason": "Theme count not mentioned in SP"
+    },
+    "P39": {
+      "sp": "SP-",
+      "reason": "Syntax highlighting availability not mentioned"
+    },
+    "P40": {
+      "sp": "SP-",
+      "reason": "Theme picker not described in SP"
+    },
+    "P41": {
+      "sp": "SP-",
+      "reason": "/theme command not mentioned in SP"
+    },
+    "P42": {
+      "sp": "SP-",
+      "reason": "Diff view not described in SP"
+    },
+    "P43": {
+      "sp": "SP-",
+      "reason": "Diff colors not described in SP"
+    },
+    "P44": {
+      "sp": "SP-",
+      "reason": "Checkpointing not described in SP"
+    },
+    "P45": {
+      "sp": "SP-",
+      "reason": "Diff navigation not described in SP"
+    },
+    "P46": {
+      "sp": "SP-",
+      "reason": "Rewind options not described in SP"
+    },
+    "P47": {
+      "sp": "SP-",
+      "reason": "Error display not described in SP"
+    },
+    "P48": {
+      "sp": "SP-",
+      "reason": "Fast mode rate limit fallback not described"
+    },
+    "P49": {
+      "sp": "SP+",
+      "reason": "SP explicitly says 'automatically compress prior messages'"
+    },
+    "P50": {
+      "sp": "SP-",
+      "reason": "Retry visual indicator not described in SP"
+    },
+    "P51": {
+      "sp": "SP+",
+      "reason": "SP says 'CLI'; no sidebar mentioned → inferrable"
+    },
+    "P52": {
+      "sp": "SP+",
+      "reason": "SP describes text interface; no avatars → inferrable"
+    },
+    "P53": {
+      "sp": "SP+",
+      "reason": "SP describes terminal tool; no image rendering → inferrable"
+    },
+    "P54": {
+      "sp": "SP+",
+      "reason": "SP describes CLI; no file tree panel → inferrable"
+    },
+    "P55": {
+      "sp": "SP+",
+      "reason": "SP describes keyboard-driven terminal → D is inferrable"
+    }
+  },
+  "objective_results": {
+    "sp_plus": {
+      "correct": 7,
+      "total": 7,
+      "accuracy": 1.0,
+      "avg_confidence": 0.8757142857142858,
+      "avg_calibration_error": 0.1242857142857143
+    },
+    "sp_minus": {
+      "correct": 16,
+      "total": 21,
+      "accuracy": 0.7619047619047619,
+      "avg_confidence": 0.49142857142857144,
+      "avg_calibration_error": 0.5323809523809524
+    },
+    "fisher_exact": {
+      "odds_ratio": Infinity,
+      "p_value": 0.28952991452991456
+    }
+  },
+  "confidence_analysis": {
+    "sp_plus_correct_mean": 0.8757142857142858,
+    "sp_minus_correct_mean": 0.473125,
+    "sp_minus_wrong_mean": 0.55
+  },
+  "details": [
+    {
+      "prompt_id": "P02",
+      "domain": "D1",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.4,
+      "answer_given": "B",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P03",
+      "domain": "D1",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.6,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P06",
+      "domain": "D1",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": false,
+      "confidence": 0.55,
+      "answer_given": "False",
+      "correct_answer": "True"
+    },
+    {
+      "prompt_id": "P09",
+      "domain": "D2",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.6,
+      "answer_given": "C",
+      "correct_answer": "C"
+    },
+    {
+      "prompt_id": "P10",
+      "domain": "D2",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.6,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P13",
+      "domain": "D2",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": false,
+      "confidence": 0.55,
+      "answer_given": "A",
+      "correct_answer": "D"
+    },
+    {
+      "prompt_id": "P15",
+      "domain": "D3",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.62,
+      "answer_given": "A",
+      "correct_answer": "A"
+    },
+    {
+      "prompt_id": "P16",
+      "domain": "D3",
+      "type": "true_false",
+      "sp": "SP+",
+      "correct": true,
+      "confidence": 0.9,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P19",
+      "domain": "D3",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": false,
+      "confidence": 0.8,
+      "answer_given": "False",
+      "correct_answer": "True"
+    },
+    {
+      "prompt_id": "P21",
+      "domain": "D4",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.65,
+      "answer_given": "B",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P22",
+      "domain": "D4",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.75,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P25",
+      "domain": "D4",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.6,
+      "answer_given": "B",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P27",
+      "domain": "D5",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.4,
+      "answer_given": "B",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P28",
+      "domain": "D5",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.45,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P32",
+      "domain": "D6",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.25,
+      "answer_given": "B",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P33",
+      "domain": "D6",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": false,
+      "confidence": 0.45,
+      "answer_given": "False",
+      "correct_answer": "True"
+    },
+    {
+      "prompt_id": "P36",
+      "domain": "D6",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": false,
+      "confidence": 0.4,
+      "answer_given": "A",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P38",
+      "domain": "D7",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.2,
+      "answer_given": "C",
+      "correct_answer": "C"
+    },
+    {
+      "prompt_id": "P39",
+      "domain": "D7",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.2,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P43",
+      "domain": "D8",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.55,
+      "answer_given": "B",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P44",
+      "domain": "D8",
+      "type": "true_false",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.45,
+      "answer_given": "True",
+      "correct_answer": "True"
+    },
+    {
+      "prompt_id": "P48",
+      "domain": "D9",
+      "type": "forced_choice",
+      "sp": "SP-",
+      "correct": true,
+      "confidence": 0.25,
+      "answer_given": "B",
+      "correct_answer": "B"
+    },
+    {
+      "prompt_id": "P49",
+      "domain": "D9",
+      "type": "true_false",
+      "sp": "SP+",
+      "correct": true,
+      "confidence": 0.55,
+      "answer_given": "True",
+      "correct_answer": "True"
+    },
+    {
+      "prompt_id": "P51",
+      "domain": "D10",
+      "type": "true_false",
+      "sp": "SP+",
+      "correct": true,
+      "confidence": 0.95,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P52",
+      "domain": "D10",
+      "type": "true_false",
+      "sp": "SP+",
+      "correct": true,
+      "confidence": 0.95,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P53",
+      "domain": "D10",
+      "type": "true_false",
+      "sp": "SP+",
+      "correct": true,
+      "confidence": 0.9,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P54",
+      "domain": "D10",
+      "type": "true_false",
+      "sp": "SP+",
+      "correct": true,
+      "confidence": 0.95,
+      "answer_given": "False",
+      "correct_answer": "False"
+    },
+    {
+      "prompt_id": "P55",
+      "domain": "D10",
+      "type": "forced_choice",
+      "sp": "SP+",
+      "correct": true,
+      "confidence": 0.93,
+      "answer_given": "D",
+      "correct_answer": "D"
+    }
+  ]
+}
